@@ -1,0 +1,1357 @@
+{
+  "name": "繁體中文",
+  "abbreviation": "繁",
+  "app": {
+    "logoutMessage": "閒置時間過長，已登出！"
+  },
+  "header": {
+    "permission": "明碼",
+    "expire": "到期"
+  },
+  "footer": {
+    "totalUser": "累積使用人數：",
+    "version": "版本資訊：",
+    "currentUser": "目前使用人數：",
+    "privacyPolicy": "網站隱私權政策",
+    "informationSecurity": "資訊安全政策宣告",
+    "openDataDeclaration": "網站資料開放宣告",
+    "personalDataProtection": "個資保護專區",
+    "address": "地址 : 100006臺北市中正區博愛路172號",
+    "phone": "服務專線：(02)2311-1501",
+    "service": "服務時間：星期一至星期五上午8時至下午17時",
+    "copyright": "國防部全民防衛動員署後備指揮部版權所有 Copyright©2022. Armed Forces Reserve Command,All-Out Defense Mobilization Agency,Ministry of National Defense All right reserved."
+  },
+  "register": {
+    "title": "線上帳號註冊",
+    "display": "顯示",
+    "userInfo": "基本資料",
+    "account": "帳號",
+    "accountHint": "請輸入帳號",
+    "accountDescription": "帳號長度為8~20字元",
+    "password": "密碼",
+    "passwordHint": "請輸入密碼",
+    "passwordDescription": "密碼長度為8~20字元\n應包含大寫英文字母、小寫英文字母、阿拉伯數字及特殊符號等至少3種組合",
+    "name": "姓名",
+    "nameHint": "請輸入姓名",
+    "jobPosition": "職稱",
+    "jobPositionHint": "請輸入職稱",
+    "pid": "身分證字號",
+    "pidHint": "請輸入身分證字號",
+    "email": "電子信箱",
+    "emailHint": "請輸入電子信箱",
+    "phone": "公務電話/分機",
+    "businessPhone": "公務電話",
+    "businessPhoneHint": "請輸入公務電話",
+    "telephoneExtension": "分機",
+    "telephoneExtensionHint": "分機",
+    "cellphone": "手機號碼",
+    "cellphoneHint": "請輸入手機號碼",
+    "lineId": "Line Id",
+    "lineIdHint": "請輸入Line Id",
+    "agencyType": "單位類型",
+    "agencyTypeHint": "請輸入單位類型",
+    "identity": "單位類別",
+    "organization": "中央機關",
+    "government": "地方政府",
+    "militaryAgency": "機關",
+    "militaryAgencyHint": "機關",
+    "secondlevelmilitaryAgency": "單位",
+    "secondlevelmilitaryAgencyHint": "請輸入單位名稱",
+    "maintainManufacturer": "維護廠商",
+    "firstlevelAgencyId": "二級",
+    "firstlevelAgencyIdHint": "二級",
+    "secondaryAgencyId": "三級",
+    "secondaryAgencyIdHint": "三級",
+    "department": "業務單位",
+    "departmentHint": "請輸入業務單位名稱",
+    "maintainManufacturerName": "維護廠商名稱",
+    "maintainManufacturerNameHint": "請輸入維護廠商名稱",
+    "isPlansponsor": "是否為計畫承辦人",
+    "isPlansponsorDescription": "計畫主辦",
+    "cityId": "縣市",
+    "cityIdHint": "縣市",
+    "firstlevelUnitId": "一級",
+    "firstlevelUnitIdHint": "一級",
+    "unitName": "單位",
+    "unitNameHint": "請輸入單位名稱",
+    "businessPlan": "業務計畫別",
+    "businessPlanHint": "請輸入業務計畫別",
+    "mobilizationPlan": "編管類別選擇",
+    "mobilization": "動員方案/分類",
+    "mobilizationPlanIdHint": "動員方案",
+    "mobilizationClassificationIdHint": "動員分類",
+    "braidingCategoryIdList": "編管類別",
+    "businessNeeds": "業務需求說明",
+    "businessNeedsHint": "請輸入業務需求說明",
+    "appliedIpAddress": "登入IP位址",
+    "appliedIpAddressHint": "xxx",
+    "appliedIpAddressDescription": "請輸入後續帳號登入之對外IP位址，若不確認請洽貴單位資訊單位確認",
+    "otherToolsSystemAccountTitle": "其他工具系統帳號",
+    "pamacc": "特權帳號",
+    "pamaccHint": "請輸入特權帳號",
+    "ztacc": "零信任",
+    "ztaccHint": "請輸入零信任帳號",
+    "splacc": "日誌管理",
+    "splaccHint": "請輸入日誌管理帳號",
+    "toacc": "防竄改",
+    "toaccHint": "請輸入防竄改帳號",
+    "mobilizationTypeTitle": "動員類型選擇",
+    "mobilizationType": "動員類型",
+    "roleMainId": "角色權限",
+    "roleMainIdHint": "請選擇角色權限",
+    "state": "啟用狀態",
+    "stateHint": "請選擇啟用狀態",
+    "file": "申請附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "yourEmail": "註冊成功！您註冊的電子信箱為：",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出申請",
+    "level": "層級",
+    "levelHint": "層級"
+  },
+  "registerProgress": {
+    "title": "帳號申請進度查詢",
+    "loginPage": "現有帳號登入",
+    "pid": "身分證字號",
+    "pidHint": "請輸入身分證字號",
+    "name": "申請人姓名",
+    "nameHint": "請輸入申請人姓名",
+    "back": "回上一頁",
+    "clear": "清空",
+    "search": "查詢",
+    "result": "帳號申請結果",
+    "notFound": "無帳號申請紀錄或資料輸入錯誤"
+  },
+  "changePassword": {
+    "title": "變更密碼",
+    "display": "顯示",
+    "accountVerification": "密碼",
+    "accountVerificationHint": "請輸入密碼",
+    "accountVerificationCheck": "確認密碼",
+    "accountVerificationCheckHint": "請再次輸入密碼",
+    "passwordDescription": "密碼長度為8~20字元\n應包含大寫英文字母、小寫英文字母、阿拉伯數字及特殊符號等至少3種組合",
+    "cancel": "取消",
+    "confirm": "確認"
+  },
+  "login": {
+    "title": "入口網頁",
+    "accountLogin": "帳號密碼登入",
+    "certificateLogin": "自然人憑證登入",
+    "forgotPassword": "忘記密碼",
+    "register": "帳號申請",
+    "registerProgress": "帳號申請進度查詢",
+    "ZeroLogin": "零信任登入",
+    "systemIssueContact": "系統問題聯繫窗口",
+    "officeHours": "服務時間：",
+    "officeHoursHint": "平日 08:00~17:00",
+    "accountRegister": "帳號申請：",
+    "accountRegisterContact": "俞德嫻少校",
+    "accountRegisterContactPhone": "02-23111501#262153",
+    "system": "系統操作：",
+    "systemContact": "洪信和工程師",
+    "systemContactPhone": "02-23111501#262136",
+    "mobilizationPlan": "動員報表：",
+    "mobilizationPlanContact": "葉芝琪工程師",
+    "mobilizationPlanPhone": "02-23111501#262136"
+  },
+  "zeroLogin": {
+    "identityBindingTitle": "初次登入或變更裝置設定者",
+    "loginSystemTitle": "已完成身分設定者"
+  },
+  "accountLogin": {
+    "account": "帳號",
+    "accountHint": "請輸入帳號",
+    "password": "密碼",
+    "passwordHint": "請輸入密碼",
+    "login": "登入"
+  },
+  "certificateLogin": {
+    "firstDescription": "1. 需使用憑證IC卡與讀卡機。",
+    "secondDescriptionOne": "2. 若您的電腦第一次使用本網站，請安装",
+    "secondDescriptionTwo": "跨平臺網頁元件",
+    "secondDescriptionThree": "，才能使用憑證登入。",
+    "account": "身分證字號",
+    "accountHint": "請輸入身分證字號",
+    "password": "PIN碼",
+    "passwordHint": "請輸入PIN碼",
+    "login": "登入"
+  },
+  "fidoLogin": {
+    "qrDescription": "QR Code驗證：\n請於180秒內，\n使用APP驗證功能進行掃描。",
+    "pushDescription": "推播驗證：\n如30秒內沒有收到訊息，\n請再推播一次。",
+    "account": "身分證字號",
+    "accountHint": "請輸入身分證字號",
+    "qrlogin": "QR Code驗證",
+    "pushlogin": "推播驗證"
+  },
+  "latestNews": {
+    "title": "最新消息",
+    "more": "更多消息"
+  },
+  "featurePanel": {
+    "title": "入口網整合平台"
+  },
+  "mobilizationEnergy": {
+    "title": "動員量能",
+    "subMenus": {
+      "dashboard": "儀表板",
+      "reportSearch": "報表查詢"
+    }
+  },
+  "businessManagement": {
+    "title": "業務管考",
+    "add": "新增一筆",
+    "subMenus": {
+      "importantPolicy": "重要政策",
+      "addImportantPolicy": "新增重要政策",
+      "editImportantPolicy": "編輯重要政策",
+      "crossDepartmentMeeting": "跨部會定期會議",
+      "addCrossDepartmentMeeting": "新增跨部會定期會議",
+      "editCrossDepartmentMeeting": "編輯跨部會定期會議",
+      "mobilizationStrategy": "動員方案審議",
+      "addMobilizationStrategy": "新增動員方案審議",
+      "editMobilizationStrategy": "編輯動員方案審議",
+      "mobilizationCategorization": "動員分類計畫審議",
+      "addMobilizationCategorization": "新增動員分類計畫審議",
+      "editMobilizationCategorization": "編輯動員分類計畫審議",
+      "mobilizationAccess": "動員業務訪問",
+      "addMobilizationAccess": "新增動員業務訪問",
+      "editMobilizationAccess": "編輯動員業務訪問",
+      "mobilizationEvaluation": "動員業務訪評",
+      "addMobilizationEvaluation": "新增動員業務訪評",
+      "editMobilizationEvaluation": "編輯動員業務訪評",
+      "mobilizationValidation": "演習驗證評鑑",
+      "addMobilizationValidation": "新增演習驗證評鑑",
+      "editMobilizationValidation": "編輯演習驗證評鑑",
+      "mobilizationLecture": "動員講習培訓",
+      "addMobilizationLecture": "新增動員講習培訓",
+      "editMobilizationLecture": "編輯動員講習培訓",
+      "excellenceRecognition": "動員績優表揚",
+      "addExcellenceRecognition": "新增動員績優表揚",
+      "editExcellenceRecognition": "編輯動員績優表揚",
+      "mobilizationReport": "動員會報",
+      "addMobilizationReport": "新增動員會報",
+      "editMobilizationReport": "編輯動員會報",
+      "midWarReport": "戰綜會報",
+      "addMidWarReport": "新增戰綜會報",
+      "editMidWarReport": "編輯戰綜會報",
+      "topicEffect": "合署成效"
+    }
+  },
+  "addBusinessManagement": {
+    "announcementUnitInfo": "公告單位資訊",
+    "announcementDate": "公告日期",
+    "announcementDateHint": "請輸入公告日期",
+    "announcementUnit": "公告單位",
+    "announcedUser": "承辦人員/職稱",
+    "nameHint": "請輸入承辦人員",
+    "jobPosition": "職稱：",
+    "jobPositionHint": "職稱",
+    "createdDate": "建檔日期",
+    "createdUser": "建檔人員",
+    "phone": "公務電話/分機",
+    "businessPhoneHint": "請輸入公務電話",
+    "telephoneExtension": "分機",
+    "telephoneExtensionHint": "分機",
+    "visibleUnit": "可見公告單位",
+    "unitHint": "選擇單位",
+    "organization": "可見中央機關",
+    "government": "可見地方政府",
+    "military": "可見國軍單位",
+    "firstlevelAgencyId": "二級",
+    "firstlevelAgencyIdHint": "二級",
+    "secondaryAgencyId": "三級",
+    "secondaryAgencyIdHint": "三級",
+    "cityId": "縣市",
+    "cityIdHint": "縣市",
+    "firstlevelUnitId": "一級",
+    "firstlevelUnitIdHint": "一級",
+    "announcementInfo": "公告資訊",
+    "title": "公告主旨",
+    "titleHint": "請輸入公告主旨",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限25MB，檔案格式限定：pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+    "isRespondedAttatchmentRequiredAndFileDate": "是否需回傳附件/\n繳件期限",
+    "attachmentDeadlineDateHint": "請輸入繳件期限",
+    "content": "公告內容",
+    "contentHint": "請輸入公告內容",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editBusinessManagement": {
+    "announcementUnitInfo": "公告單位資訊",
+    "announcementDate": "公告日期",
+    "announcementDateHint": "請輸入公告日期",
+    "announcementUnit": "公告單位",
+    "announcedUser": "承辦人員/職稱",
+    "nameHint": "請輸入承辦人員",
+    "jobPosition": "職稱：",
+    "jobPositionHint": "職稱",
+    "createdDate": "建檔日期",
+    "createdUser": "建檔人員",
+    "phone": "公務電話/分機",
+    "businessPhoneHint": "請輸入公務電話",
+    "telephoneExtension": "分機",
+    "telephoneExtensionHint": "分機",
+    "visibleUnit": "可見公告單位",
+    "unitHint": "選擇單位",
+    "announcementInfo": "公告資訊",
+    "title": "公告主旨",
+    "titleHint": "請輸入公告主旨",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "uploadedFile": "已上傳附件",
+    "fileDescription": "檔案上限25MB，檔案格式限定：pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+    "isRespondedAttatchmentRequiredAndFileDate": "是否需回傳附件/\n繳件期限",
+    "attachmentDeadlineDateHint": "請輸入繳件期限",
+    "content": "公告內容",
+    "contentHint": "請輸入公告內容",
+    "back": "回上一頁",
+    "save": "儲存"
+  },
+  "retrievalService": {
+    "title": "檢索服務",
+    "subMenus": {
+      "regulation": "法規查詢",
+      "regulationDetail": "法規查詢",
+      "general": "通用及國防組織類",
+      "civil": "全民防衛動員類",
+      "spiritual": "精神動員類",
+      "humanResource": "人力動員類",
+      "supplyResource": "物資經濟動員類",
+      "finance": "財力動員類",
+      "transportation": "交通動員類",
+      "health": "衛生動員類",
+      "technology": "科技動員類",
+      "military": "軍事動員類",
+      "disaster": "災害防救及其他類",
+      "mobilization": "動員類",
+      "nationDefense": "國防類",
+      "civilDefense": "民防類",
+      "militaryService": "兵役類",
+      "regulationManagement": "法規查詢管理",
+      "addRegulation": "新增法規管理",
+      "editRegulation": "編輯法規管理",
+      "planDownload": "計畫下載",
+      "mobilizationProgram": "動員綱領",
+      "mobilizationPlan": "動員方案",
+      "mobilizationClassification": "動員分類",
+      "mobilizationExecution": "動員執行",
+      "planDownloadManagement": "計畫下載管理",
+      "mobilizationProgramManagement": "動員綱領管理",
+      "mobilizationPlanManagement": "動員方案管理",
+      "mobilizationClassificationManagement": "動員分類管理",
+      "mobilizationExecutionManagement": "動員執行管理",
+      "mobilizationPlanDetailManagement": "動員方案詳細管理",
+      "mobilizationClassificationDetailManagement": "動員分類詳細管理",
+      "addMobilizationProgram": "新增動員綱領",
+      "addMobilizationPlan": "新增動員方案",
+      "addMobilizationClassification": "新增動員分類",
+      "addMobilizationExecution": "新增動員執行",
+      "editMobilizationProgram": "編輯動員綱領",
+      "editMobilizationPlan": "編輯動員方案",
+      "editMobilizationClassification": "編輯動員分類",
+      "editMobilizationExecution": "編輯動員執行",
+      "contactInformation": "聯絡資訊",
+      "contactInformationDetail": "聯絡資訊詳細資料"
+    }
+  },
+  "baseRegulationManagementTable": {
+    "add": "新增一筆"
+  },
+  "addRegulation": {
+    "regulationName": "法規名稱",
+    "regulationNameHint": "請輸入法規名稱",
+    "regulationUrl": "法規連結",
+    "regulationUrlHint": "請輸入法規連結",
+    "remark": "備註",
+    "remarkHint": "請輸入備註",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editRegulation": {
+    "regulationName": "法規名稱",
+    "regulationNameHint": "請輸入法規名稱",
+    "regulationUrl": "法規連結",
+    "regulationUrlHint": "請輸入法規連結",
+    "remark": "備註",
+    "remarkHint": "請輸入備註",
+    "back": "回上一頁",
+    "clear": "清空",
+    "save": "儲存"
+  },
+  "planDownloadItem": {
+    "download": "下載"
+  },
+  "mobilizationPlan": {
+    "titlePrefix": "方案別：",
+    "back": "回上一頁"
+  },
+  "mobilizationClassification": {
+    "titlePrefix": "動員分類：",
+    "back": "回上一頁"
+  },
+  "mobilizationExecution": {
+    "titlePrefix": "動員執行：",
+    "back": "回上一頁"
+  },
+  "contactItem": {
+    "plan": "動員會報",
+    "contact": "聯絡資訊"
+  },
+  "contactDetailItem": {
+    "workPlace": "單位",
+    "name": "姓名",
+    "jobPosition": "職稱",
+    "fullTelephone": "聯絡電話",
+    "email": "E-mail"
+  },
+  "contactDetailTabPage": {
+    "filter": "篩選：",
+    "filterHint": "請選擇篩選條件"
+  },
+  "mobilizationProgramManagement": {
+    "add": "新增一筆"
+  },
+  "addMobilizationProgram": {
+    "mobilizationProgramSubject": "公告主旨",
+    "mobilizationProgramSubjectHint": "請輸入公告主旨",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請選擇策訂單位",
+    "executiveYuan": "行政院",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editMobilizationProgram": {
+    "mobilizationProgramSubject": "公告主旨",
+    "mobilizationProgramSubjectHint": "請輸入公告主旨",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請選擇策訂單位",
+    "executiveYuan": "行政院",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "currentFile": "目前附件",
+    "back": "回上一頁",
+    "clear": "清空",
+    "save": "儲存"
+  },
+  "addMobilizationPlan": {
+    "mobilizationPlanSubject": "公告主旨",
+    "mobilizationPlanSubjectHint": "請輸入公告主旨",
+    "mobilizationPlanId": "動員方案",
+    "mobilizationPlanIdHint": "請選擇動員方案",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editMobilizationPlan": {
+    "mobilizationPlanSubject": "公告主旨",
+    "mobilizationPlanSubjectHint": "請輸入公告主旨",
+    "mobilizationPlanId": "動員方案",
+    "mobilizationPlanIdHint": "請選擇動員方案",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "currentFile": "目前附件",
+    "back": "回上一頁",
+    "clear": "清空",
+    "save": "儲存"
+  },
+  "mobilizationPlanDetailManagement": {
+    "add": "新增一筆",
+    "back": "回上一頁"
+  },
+  "addMobilizationClassification": {
+    "mobilizationClassificationSubject": "公告主旨",
+    "mobilizationClassificationSubjectHint": "請輸入公告主旨",
+    "mobilizationClassificationId": "動員分類",
+    "mobilizationClassificationIdHint": "請選擇動員分類",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editMobilizationClassification": {
+    "mobilizationClassificationSubject": "公告主旨",
+    "mobilizationClassificationSubjectHint": "請輸入公告主旨",
+    "mobilizationClassificationId": "動員分類",
+    "mobilizationClassificationIdHint": "請選擇動員分類",
+    "releaseFirstlevelAgencyId": "策訂單位",
+    "releaseFirstlevelAgencyIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf",
+    "currentFile": "目前附件",
+    "back": "回上一頁",
+    "clear": "清空",
+    "save": "儲存"
+  },
+  "mobilizationClassificationDetailManagement": {
+    "add": "新增一筆",
+    "back": "回上一頁"
+  },
+  "mobilizationExecutionManagement": {
+    "add": "新增一筆"
+  },
+  "addMobilizationExecution": {
+    "mobilizationExecutionSubject": "公告主旨",
+    "mobilizationExecutionSubjectHint": "請輸入公告主旨",
+    "cityId": "縣市",
+    "cityIdHint": "請輸入縣市",
+    "releaseFirstlevelUnitId": "策訂單位",
+    "releaseFirstlevelUnitIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案格式限定：rar、zip、7z",
+    "back": "回上一頁",
+    "clear": "清空",
+    "submit": "送出"
+  },
+  "editMobilizationExecution": {
+    "mobilizationExecutionSubject": "公告主旨",
+    "mobilizationExecutionSubjectHint": "請輸入公告主旨",
+    "cityId": "縣市",
+    "cityIdHint": "請輸入縣市",
+    "releaseFirstlevelUnitId": "策訂單位",
+    "releaseFirstlevelUnitIdHint": "請輸入策訂單位",
+    "releaseDate": "策訂日期",
+    "releaseDateHint": "請輸入策訂日期",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案格式限定：rar、zip、7z",
+    "currentFile": "目前附件",
+    "back": "回上一頁",
+    "clear": "清空",
+    "save": "儲存"
+  },
+  "dataSearch": {
+    "title": "資料查詢",
+    "subMenus": {
+      "categoryDetail": "分類查詢",
+      "resultDetail": "資料查詢詳細資料",
+      "criteria": "資料標準",
+      "dataSearch": "資料態樣",
+      "cloudData": "雲端資料編輯",
+      "cloudDataEdit": "雲端資料編輯平台",
+      "cloudDataSearch": "雲端資料查詢"
+    },
+    "planId": "動員方案",
+    "planIdHint": "請輸入動員方案",
+    "classificationId": "動員分類",
+    "classificationIdHint": "請輸入動員分類",
+    "startDateHint": "開始日期",
+    "endDateHint": "結束日期",
+    "statusHint": "確認狀態",
+    "searchTitleHint": "關鍵字查詢",
+    "approve": "批次確認",
+    "singleId": "檢視單筆身分證"
+  },
+  "serve": {
+    "title": "檢索服務",
+    "subMenus": {
+      "qanda": "常見問題"
+    }
+  },
+  "categoryDetail": {
+    "title": "分類查詢",
+    "planId": "動員方案",
+    "classificationId": "動員分類",
+    "categoryId": "編管類別",
+    "categoryIdHint": "請輸入編管類別",
+    "startDateHint": "開始日期",
+    "endDateHint": "結束日期",
+    "searchTitleHint": "關鍵字查詢",
+    "back": "回上一頁"
+  },
+  "resultDetail": {
+    "back": "回上一頁"
+  },
+  "criteria": {
+    "back": "回上一頁"
+  },
+  "systemManagement": {
+    "title": "系統管理",
+    "subMenus": {
+      "approveUser": "線上帳號審核",
+      "approveUserDetail": "帳號審核詳細資料",
+      "userManagement": "使用者管理",
+      "addUserManagement": "新增使用者",
+      "editUserManagement": "編輯使用者",
+      "accessControl": "角色權限管理",
+      "addAccessControl": "新增角色權限",
+      "editAccessControl": "編輯角色權限",
+      "mobilizationPlanManagement": "編管類別管理",
+      "addMobilizationPlanManagement": "新增動員方案",
+      "mobilizationClassificationManagement": "編管類別管理",
+      "addMobilizationClassificationManagement": "新增動員分類",
+      "braidingCategoryManagement": "編管類別管理",
+      "addBraidingCategoryManagement": "新增編管類別",
+      "editBraidingCategoryManagement": "編輯編管類別",
+      "firstLevelAgency": "中央機關管理",
+      "addFirstLevelAgency": "新增中央機關",
+      "secondaryAgency": "中央機關詳細資料",
+      "addSecondaryAgency": "新增三級機關",
+      "editSecondaryAgency": "編輯三級機關",
+      "systemCode": "系統代碼管理",
+      "addSystemCode": "新增系統代碼",
+      "systemCodeSet": "系統代碼項",
+      "addSystemCodeSet": "新增系統代碼項",
+      "editSystemCodeSet": "編輯系統代碼項",
+      "systemMenu": "系統選單管理",
+      "addSystemMenu": "新增系統選單",
+      "systemSubMenu": "系統子選單管理",
+      "addSystemSubMenu": "新增系統子選單",
+      "editSystemSubMenu": "編輯系統子選單",
+      "modificationSearch": "系統操作紀錄",
+      "systemAnnouncement": "系統公告維護",
+      "addSystemAnnouncement": "新增系統公告",
+      "editSystemAnnouncement": "編輯系統公告",
+      "systemPermissionApplication": "明碼權限申請",
+      "permissionApplicationDetail": "明碼權限申請",
+      "addPermissionApplication": "申請",
+      "systemPermissionApprove": "明碼權限審核",
+      "permissionApproveDetail": "明碼權限審核",
+      "approvePermissionApplication": "審核"
+    }
+  },
+  "approveUserDetail": {
+    "file": "申請公文附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定：pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+    "viewAccess": "查看權限",
+    "reasonOfFailure": "不通過原因",
+    "back": "回上一頁",
+    "reject": "不同意",
+    "approve": "同意"
+  },
+  "userManagement": {
+    "add": "新增一筆"
+  },
+  "addUserManagement": {
+    "title": "新增使用者"
+  },
+  "editUserManagement": {
+    "remark": "備考",
+    "remarkHint": "請輸入備考",
+    "save": "儲存",
+    "currentBraidingList": "目前編管類別",
+    "changePassword": "變更密碼",
+    "viewAccess": "查看權限"
+  },
+  "accessControl": {
+    "add": "新增一筆"
+  },
+  "addAccessControl": {
+    "roleName": "角色名稱",
+    "roleNameHint": "請輸入角色名稱",
+    "roleMemo": "角色說明",
+    "roleMemoHint": "請輸入角色說明",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editAccessControl": {
+    "roleName": "角色名稱",
+    "roleNameHint": "請輸入角色名稱",
+    "roleMemo": "角色說明",
+    "roleMomoHint": "請輸入角色說明",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "mobilizationPlanManagement": {
+    "add": "新增一筆"
+  },
+  "addMobilizationPlanManagement": {
+    "planName": "動員方案",
+    "planNameHint": "請輸入動員方案",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "mobilizationClassificationManagement": {
+    "add": "新增一筆",
+    "mobilizationPlan": "方案資訊",
+    "mobilizationClassification": "方案所屬分類資訊"
+  },
+  "addMobilizationClassificationManagement": {
+    "mobilizationPlan": "動員方案",
+    "classificationName": "動員分類",
+    "classificationNameHint": "請輸入動員分類",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "braidingCategoryManagement": {
+    "mobilizationPlan": "方案資訊",
+    "braidingCategory": "分類所屬編管類別資訊",
+    "mobilizationPlanName": "動員方案",
+    "mobilizationClassificationName": "動員分類"
+  },
+  "addBraidingCategoryManagement": {
+    "mobilizationPlan": "動員方案",
+    "mobilizationClassification": "動員分類",
+    "fullName": "編管類型",
+    "fullNameHint": "請輸入編管類型",
+    "categoryType": "人/物力",
+    "projectManagementNumber": "計畫編管數",
+    "projectManagementNumberHint": "請輸入計畫編管數",
+    "updateCycle": "更新週期（月）",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editBraidingCategoryManagement": {
+    "mobilizationPlan": "動員方案",
+    "mobilizationClassification": "動員分類",
+    "fullName": "編管類型",
+    "fullNameHint": "請輸入編管類型",
+    "categoryType": "人/物力",
+    "projectManagementNumber": "計畫編管數",
+    "projectManagementNumberHint": "請輸入計畫編管數",
+    "updateCycle": "更新週期（月）",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "firstLevelAgency": {
+    "add": "新增一筆"
+  },
+  "addFirstLevelAgency": {
+    "fullName": "二級機關全銜",
+    "fullNameHint": "請輸入二級機關全銜",
+    "shortName": "二級機關簡稱",
+    "shortNameHint": "請輸入二級機關簡稱",
+    "enCode": "英文代碼",
+    "enCodeHint": "請輸入英文代碼",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "secondaryAgency": {
+    "add": "新增一筆",
+    "firstLevelAgency": "二級機關",
+    "secondaryAgency": "三級機關"
+  },
+  "addSecondaryAgency": {
+    "firstLevelAgency": "二級機關",
+    "fullName": "三級機關全銜",
+    "fullNameHint": "請輸入三級機關全銜",
+    "shortName": "三級機關簡稱",
+    "shortNameHint": "請輸入三級機關簡稱",
+    "enCode": "英文代碼",
+    "enCodeHint": "請輸入英文代碼",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editSecondaryAgency": {
+    "firstLevelAgency": "二級機關",
+    "fullName": "三級機關全銜",
+    "fullNameHint": "請輸入三級機關全銜",
+    "shortName": "三級機關簡稱",
+    "shortNameHint": "請輸入三級機關簡稱",
+    "enCode": "英文代碼",
+    "enCodeHint": "請輸入英文代碼",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "systemCode": {
+    "add": "新增一筆"
+  },
+  "addSystemCode": {
+    "codeId": "代碼編號",
+    "codeIdHint": "請輸入代碼編號",
+    "name": "代碼中文名稱",
+    "nameHint": "請輸入代碼中文名稱",
+    "heading": "代碼英文名稱",
+    "headingHint": "請輸入代碼英文名稱",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "systemCodeSet": {
+    "add": "新增一筆",
+    "systemCode": "代碼組資訊",
+    "systemCodeSet": "代碼"
+  },
+  "addSystemCodeSet": {
+    "codeId": "代碼編號",
+    "codeIdHint": "請輸入代碼編號",
+    "codeChineseName": "代碼中文名稱",
+    "name": "代碼項中文名稱",
+    "nameHint": "請輸入代碼項中文名稱",
+    "sequenceNumber": "代碼排序",
+    "sequenceNumberHint": "請輸入代碼排序",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editSystemCodeSet": {
+    "codeId": "代碼編號",
+    "codeIdHint": "請輸入代碼編號",
+    "codeChineseName": "代碼中文名稱",
+    "name": "代碼項中文名稱",
+    "nameHint": "請輸入代碼項中文名稱",
+    "sequenceNumber": "代碼排序",
+    "sequenceNumberHint": "請輸入代碼排序",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "systemMenu": {
+    "add": "新增一筆"
+  },
+  "addSystemMenu": {
+    "menuName": "選單名稱",
+    "menuNameHint": "請輸入選單名稱",
+    "url": "程式路徑",
+    "urlHint": "請輸入程式路徑",
+    "controller": "Controller",
+    "controllerHint": "請輸入Controller",
+    "action": "Action",
+    "actionHint": "請輸入Action",
+    "param": "Param",
+    "paramHint": "請輸入Param",
+    "sequenceNumber": "選單排序",
+    "sequenceNumberHint": "請輸入選單排序",
+    "isVisible": "是否可見",
+    "isCreatable": "是否新增功能",
+    "isUpdatable": "是否修改功能",
+    "isDeletable": "是否有刪除/停用/廢止功能",
+    "isAuditable": "是否有確認功能",
+    "isExportable": "是否有匯出功能",
+    "isExisted": "資料是否存在",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "systemSubMenu": {
+    "add": "新增一筆",
+    "systemMenu": "選單資訊",
+    "systemSubMenu": "功能管理"
+  },
+  "addSystemSubMenu": {
+    "parentMenuName": "上層選單名稱",
+    "menuName": "子選單名稱",
+    "menuNameHint": "請輸入子選單名稱",
+    "url": "程式路徑",
+    "urlHint": "請輸入程式路徑",
+    "sequenceNumber": "功能排序",
+    "sequenceNumberHint": "請輸入功能排序",
+    "controller": "Controller",
+    "controllerHint": "請輸入Controller",
+    "action": "Action",
+    "actionHint": "請輸入Action",
+    "param": "Param",
+    "paramHint": "請輸入Param",
+    "isVisible": "是否可見",
+    "isCreatable": "是否新增功能",
+    "isUpdatable": "是否修改功能",
+    "isDeletable": "是否有刪除/停用/廢止功能",
+    "isAuditable": "是否有確認功能",
+    "isExportable": "是否有匯出功能",
+    "isExisted": "資料是否存在",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editSystemSubMenu": {
+    "parentMenuName": "上層選單名稱",
+    "menuName": "子選單名稱",
+    "menuNameHint": "請輸入子選單名稱",
+    "url": "程式路徑",
+    "urlHint": "請輸入程式路徑",
+    "sequenceNumber": "功能排序",
+    "sequenceNumberHint": "請輸入功能排序",
+    "controller": "Controller",
+    "controllerHint": "請輸入Controller",
+    "action": "Action",
+    "actionHint": "請輸入Action",
+    "param": "Param",
+    "paramHint": "請輸入Param",
+    "isVisible": "是否可見",
+    "isCreatable": "是否新增功能",
+    "isUpdatable": "是否修改功能",
+    "isDeletable": "是否有刪除/停用/廢止功能",
+    "isAuditable": "是否有確認功能",
+    "isExportable": "是否有匯出功能",
+    "isExisted": "資料是否存在",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "modificationSearch": {
+    "exportExcel": "Excel匯出",
+    "exportOds": "ODS匯出"
+  },
+  "systemAnnouncement": {
+    "add": "新增一筆"
+  },
+  "addSystemAnnouncement": {
+    "title": "主旨",
+    "titleHint": "請輸入主旨",
+    "content": "內容",
+    "contentHint": "請輸入內容",
+    "isPinned": "置頂",
+    "announcementBeganAt": "公告開始日期",
+    "announcementBeganAtHint": "請輸入公告開始日期",
+    "announcementEndedAt": "公告結束日期",
+    "announcementEndedAtHint": "請輸入公告結束日期",
+    "announcementEndedAtDescription": "若填寫此欄位，當超過截止日期時，自動下架公告",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定:pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+    "submit": "送出",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "editSystemAnnouncement": {
+    "title": "主旨",
+    "titleHint": "請輸入主旨",
+    "content": "內容",
+    "contentHint": "請輸入內容",
+    "isPinned": "置頂",
+    "announcementBeganAt": "公告開始日期",
+    "announcementBeganAtHint": "請輸入公告開始日期",
+    "announcementEndedAt": "公告結束日期",
+    "announcementEndedAtHint": "請輸入公告結束日期",
+    "announcementEndedAtDescription": "若填寫此欄位，當超過截止日期時，自動下架公告",
+    "file": "附件",
+    "fileHint": "選擇檔案",
+    "fileDescription": "檔案上限10MB，檔案格式限定:pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+    "currentFile": "目前附件",
+    "save": "儲存",
+    "back": "回上一頁",
+    "clear": "清空"
+  },
+  "permissionApplication": {
+    "add": "申請",
+    "useDate": "使用日期：",
+    "useDateHint": "使用日期"
+  },
+  "addPermissionApplication": {
+    "name": "申請者",
+    "unitName": "編管單位",
+    "applyDate": "申請日期",
+    "useDate": "使用日期",
+    "useStartDateHint": "開始日期",
+    "useEndDateHint": "結束日期",
+    "requirements": "申請需求說明",
+    "back": "回上一頁",
+    "submit": "送出申請",
+    "clear": "清空"
+  },
+  "permissionApplicationDetail": {
+    "name": "申請者",
+    "unitName": "編管單位",
+    "applyDate": "申請日期",
+    "useDate": "使用日期",
+    "requirements": "申請需求說明",
+    "braidingCategory": "可見編管類別",
+    "back": "回上一頁"
+  },
+  "permissionApplicationDetailConfirmModal": {
+    "title": "申請",
+    "message": "「確定要[送出]進行審核嗎?」"
+  },
+  "permissionApproveDetail": {
+    "auditOpinion": "審核意見",
+    "auditOpinionHint": "請輸入審核意見，審核不同意時需填寫不同原因",
+    "back": "回上一頁",
+    "reject": "不同意",
+    "approve": "同意"
+  },
+  "permissionApproveDetailRejectConfirmModal": {
+    "title": "不同意",
+    "message": "是否確認[不同意]此筆申請？"
+  },
+  "permissionApproveDetailConfirmModal": {
+    "title": "同意",
+    "message": "是否確認[同意]此筆申請？"
+  },
+  "modal": {
+    "errorModal": {
+      "title": "錯誤",
+      "confirm": "確認"
+    },
+    "deleteModal": {
+      "title": "刪除",
+      "confirmDeleteMessage": "是否確認刪除？",
+      "cancel": "取消",
+      "delete": "刪除"
+    },
+    "confirmModal": {
+      "title": "確認操作",
+      "confirmMessage": "是否確認操作？",
+      "cancel": "取消",
+      "confirm": "確認"
+    },
+    "uploadFileModal": {
+      "title": "上傳檔案",
+      "uploadFile": "請選擇上傳檔案",
+      "fileName": "檔名：",
+      "noUpload": "尚未上傳檔案",
+      "cancel": "取消",
+      "upload": "上傳"
+    },
+    "approveModal": {
+      "title": "確認核准",
+      "approveMessage": "是否確認核准？",
+      "cancel": "取消",
+      "approve": "核准"
+    },
+    "messageModal": {
+      "title": "提示訊息",
+      "confirm": "確認"
+    },
+    "businessManagementModal": {
+      "title": "標題",
+      "announcementUnit": "公告單位",
+      "announcedUser": "承辦人員",
+      "date": "日期",
+      "phone": "公務電話",
+      "file": "附件",
+      "content": "內容",
+      "returnFile": "附件回傳",
+      "fileHint": "選擇檔案",
+      "fileDescription": "檔案上限25MB，檔案格式限定：pdf、xlsx、docx、pptx、odt、ods、odp、rar、zip、7z",
+      "attachmentDeadlineDate": "繳件期限",
+      "returnFileList": "回傳附件一覽",
+      "evaluationFileList": "執行成效一覽",
+      "upload": "上傳檔案",
+      "close": "關閉視窗"
+    },
+    "businessManagementMemoModal": {
+      "title": "業務管考考核",
+      "uploaded": "已上傳",
+      "close": "關閉視窗"
+    },
+    "businessManagementSignModal": {
+      "title": "報名登記",
+      "unit": "報名單位",
+      "jobPosition": "職稱",
+      "name": "與會人姓名",
+      "telephone": "連絡電話",
+      "isFood": "是否用餐",
+      "isPlace": "留宿",
+      "TrafficType": "交通方式",
+      "clear": "清空",
+      "submit": "送出"
+    },
+    "topicEffectModal": {
+      "title": "會議事由",
+      "topic": "研討議題",
+      "effect": "執行成效",
+      "clear": "清空",
+      "submit": "送出",
+      "close": "關閉視窗"
+    },
+    "tableModal": {
+      "close": "關閉視窗"
+    },
+    "batchApprovalModal": {
+      "title": "批次確認",
+      "approve": "確認",
+      "close": "取消"
+    },
+    "announcementModal": {
+      "modalTitle": "最新消息",
+      "title": "主旨",
+      "content": "內容",
+      "isPinned": "置頂",
+      "announcementBeganAt": "公告開始日期",
+      "announcementEndedAt": "公告結束日期",
+      "file": "附件",
+      "close": "關閉視窗"
+    },
+    "acceptInformationRetrievalModal": {
+      "title": "批次確認",
+      "accept": "確認",
+      "close": "取消"
+    },
+    "memoModal": {
+      "title": "線傳考核",
+      "braidingCategory": "編管類別考核",
+      "businessManagement": "業務管考考核",
+      "planUpdate": "動員計畫更新近況"
+    },
+    "braidingCategoryMemoModal": {
+      "title": "編管類別考核",
+      "classification": "動員分類",
+      "category": "編管類別",
+      "plan": "計畫",
+      "latestData": "最新資料",
+      "upload": "上傳",
+      "approve": "確認",
+      "empty": "無資料",
+      "approved": "已確認",
+      "unapproved": "未確認",
+      "close": "關閉視窗"
+    },
+    "braidingCategoryReminderModal": {
+      "modalTitle": "編管類別異動",
+      "fullName": "編管類別",
+      "systemNum": "異動筆數",
+      "transmissionDate": "資料異動日期",
+      "close": "關閉視窗"
+    },
+    "planUpdateMemoModal": {
+      "title": "動員計畫更新近況(一個月內)",
+      "program": "動員綱領",
+      "plan": "動員方案",
+      "classification": "動員分類",
+      "execution": "動員執行",
+      "updateDate": "更新日期",
+      "close": "關閉視窗"
+    },
+    "rejectUserModal": {
+      "title": "審核",
+      "reasonOfFailure": "不同意原因",
+      "reasonOfFailureHint": "請輸入不同意原因",
+      "cancel": "取消",
+      "confirm": "確認"
+    },
+    "changePasswordModal": {
+      "title": "變更密碼",
+      "display": "顯示",
+      "accountVerification": "密碼",
+      "accountVerificationHint": "請輸入密碼",
+      "accountVerificationCheck": "確認密碼",
+      "accountVerificationCheckHint": "請再次輸入密碼",
+      "passwordDescription": "密碼長度為8~20字元\n應包含大寫英文字母、小寫英文字母、阿拉伯數字及特殊符號等至少3種組合",
+      "cancel": "取消",
+      "confirm": "確認"
+    },
+    "accessModal": {
+      "title": "角色權限",
+      "close": "關閉視窗"
+    }
+  },
+  "reminderModal": {
+    "title": "待辦事項",
+    "close": "關閉視窗"
+  },
+  "fileInput": {
+    "fileName": "檔案名稱：",
+    "noUpload": "尚未上傳檔案",
+    "fileTooLarge": "檔案大小超過限制"
+  },
+  "textSelectInput": {
+    "noOption": "無選項"
+  },
+  "validateInput": {
+    "title": "驗證碼",
+    "placeholder": "請輸入驗證碼"
+  },
+  "tableCount": {
+    "total": "筆數：",
+    "unit": "筆"
+  },
+  "tableSearch": {
+    "inputTypeHint": "請選擇搜尋選項",
+    "inputContentHint": "請輸入搜尋內容",
+    "search": "搜尋"
+  },
+  "multiTableSearch": {
+    "reset": "重置",
+    "search": "搜尋"
+  },
+  "pagination": {
+    "go": "前往"
+  },
+  "breadcrumb": {
+    "arrow": "> ",
+    "mainPage": "首頁"
+  },
+  "mobilizationPlanActionCell": {
+    "edit": "管理"
+  },
+  "mobilizationClassificationActionCell": {
+    "edit": "管理"
+  },
+  "businessManagementActionCell": {
+    "modify": "修改",
+    "delete": "刪除",
+    "open": "查看",
+    "evaluation": "執行成效填寫",
+    "signState": {
+      "sign": "報名",
+      "alreadyFull": "已額滿",
+      "deadline": "已截止"
+    }
+  },
+  "topicEffectActionCell": {
+    "modify": "編輯",
+    "open": "查看"
+  },
+  "actionCell": {
+    "modify": "修改",
+    "delete": "刪除"
+  },
+  "cloudDataActionCell": {
+    "criteria": "資料標準",
+    "template": "匯出資料範本",
+    "import": "匯入"
+  },
+  "cloudDataActionCell2": {
+    "edit": "編輯",
+    "download": "下載",
+    "confirm": "資料確認"
+  },
+  "dataSearchActionCell": {
+    "viewDetail": "上傳資料檢視",
+    "criteria": "資料標準"
+  },
+  "categoryDetailActionCell": {
+    "view": "檢視"
+  },
+  "firstLevelAgencyActionCell": {
+    "management": "管理",
+    "delete": "刪除"
+  },
+  "approveUserActionCell": {
+    "approve": "審核",
+    "view": "查看"
+  },
+  "userActionCell": {
+    "modify": "修改",
+    "delete": "刪除",
+    "lock": "鎖定帳號",
+    "unlock": "解鎖"
+  },
+  "accessControlActionCell": {
+    "management": "管理",
+    "delete": "刪除"
+  },
+  "permissionApplicationActionCell": {
+    "view": "查看",
+    "cancel": "撤回申請"
+  },
+  "permissionApproveActionCell": {
+    "approve": "審核",
+    "view": "查看"
+  },
+  "statusCode": {
+    "unknown": "未知的錯誤",
+    "200": {
+      "20001": "更新成功",
+      "20002": "刪除成功",
+      "20004": "刪除關係成功",
+      "20005": "連動軟刪除成功",
+      "20006": "變更已儲存",
+      "20007": "帳號登入成功",
+      "20008": "更新成功",
+      "20009": "上傳成功",
+      "20010": "Refresh token 成功",
+      "20011": "成功",
+      "20012": "行動自然人取得ticket",
+      "19999": "成功",
+      "29996": "確認成功"
+    },
+    "201": {
+      "20000": "建立成功",
+      "20003": "新增關係成功",
+      "20015": "建立會員成功"
+    },
+    "400": {
+      "400": "請求格式錯誤",
+      "40002": "身分管理員發現錯誤",
+      "40004": "必要關聯物件 ID 未給予",
+      "40005": "必要關聯物件重複",
+      "40006": "Patch 格式錯誤",
+      "40014": "內容不符合列舉型別定義",
+      "40015": "挑戰失敗",
+      "40020": "密碼錯誤"
+    },
+    "401": {
+      "401": "憑證失效 請重新登入 (Unauthorized)",
+      "40003": "帳號或密碼輸入錯誤，請重新輸入",
+      "40021": "帳號或密碼輸入錯誤，請重新輸入"
+    },
+    "403": {
+      "403": "權限不足 (Forbidden)",
+      "40010": "有新的登入活動，舊 token 已失效",
+      "40011": "Refresh token 已到期",
+      "40012": "Refresh token 不一致",
+      "40019": "未滿足需求",
+      "40021": "帳號或密碼輸入錯誤，請重新輸入",
+      "40022": "使用者權限不足",
+      "40023": "無法新增帳號，不可同時指派機構與城市",
+      "40024": "新密碼不可與前三次相同，請重新輸入新密碼",
+      "40025": "帳號鎖定中，請洽計畫主辦人員或系統管理員進行解鎖",
+      "40026": "使用者已超過90天未更換密碼",
+      "40027": "帳號已停用，請重新進行帳號申請",
+      "40029": "身分證已存在，且帳號為啟用狀態",
+      "40030": "驗證碼錯誤",
+      "40034": "信箱已存在，且帳號為啟用狀態",
+      "40035": "行動自然人登入取得資料失敗"
+    },
+    "404": {
+      "40001": "目標不存在",
+      "40013": "目標檔案不存在"
+    },
+    "406": {
+      "40016": "欲刪除之目標存在相關連之實體，故無法刪除",
+      "40018": "時間重疊，故目標無效"
+    },
+    "409": {
+      "40000": "目標已存在"
+    },
+    "413": {
+      "40007": "上傳檔案過大"
+    },
+    "422": {
+      "40008": "上傳檔案副檔名格式不符",
+      "40009": "上傳檔案有可疑病毒"
+    },
+    "500": {
+      "09999": "未知的錯誤",
+      "50000": "建立時出現未知錯誤",
+      "50001": "更新時出現未知錯誤",
+      "50002": "刪除時出現未知錯誤 ",
+      "50003": "新增關係時出現未知錯誤",
+      "50004": "移除關係時出現未知錯誤",
+      "50005": "軟刪除時出現未知錯誤 ",
+      "50006": "上傳時出現未知錯誤 ",
+      "50007": "使用 refresh token 時出現未知錯誤",
+      "50008": "出現未知錯誤"
+    }
+  }
+}

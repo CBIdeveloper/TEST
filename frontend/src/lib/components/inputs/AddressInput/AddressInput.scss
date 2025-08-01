@@ -1,0 +1,56 @@
+@import 'src/assets/stylesheet/config';
+
+.address-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+    max-width: initial;
+
+    .address-input-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-gap: 0.6rem;
+      min-width: 0;
+
+      .select-input {
+        .form-input {
+          width: 12rem;
+          flex: 0;
+        }
+      }
+
+      .city,
+      .district {
+        @include general-input;
+        width: 10rem;
+        flex: 0;
+      }
+
+      .road {
+        @include general-input;
+      }
+
+      .neighborhood,
+      .lane,
+      .alley,
+      .number,
+      .floor,
+      .room {
+        @include general-input;
+        width: 8rem;
+        flex: 0;
+      }
+    }
+  }
+}
+
+.window-small {
+  .address-input {
+  }
+}

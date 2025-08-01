@@ -1,0 +1,14 @@
+@import 'src/assets/stylesheet/config';
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - #{$size-footer-height});
+
+  .entry-viewport {
+    flex: 1;
+  }
+}
+
+.window-small {
+}

@@ -1,0 +1,50 @@
+@import 'src/assets/stylesheet/config';
+
+.contact-modal {
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+    .confirm-button {
+      @include center-item;
+      min-width: 7rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+  .table-shadow {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+  .table-shadow th,
+  .table-shadow td {
+    padding: 20px;
+    text-align: center;
+    font-size: $font-size-description;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .table-shadow th {
+    background-color: $color-contact-4;
+    color: white;
+  }
+
+  .table-shadow tr:hover {
+    background-color: #f1f1f1;
+  }
+}

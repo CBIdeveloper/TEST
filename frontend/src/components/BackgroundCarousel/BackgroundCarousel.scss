@@ -1,0 +1,139 @@
+@import 'src/assets/stylesheet/config';
+
+.background-carousel {
+  @include center-item;
+  position: absolute;
+  object-fit: cover;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 120rem;
+  min-width: 120rem;
+
+  .slides-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .slide {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .action-button-container {
+    position: relative;
+    left: 0;
+    width: 100vw;
+    min-width: 120rem;
+    height: 100%;
+
+    .previous-button {
+      @include outline-none;
+      position: absolute;
+      bottom: 30rem;
+      left: 6rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 6rem;
+        bottom: -17.5rem;
+        background: linear-gradient(90deg, rgba(225, 225, 225, 0.2) 0%, rgba(212,212,212,0.2) 35%, rgba(49, 49, 49, 0.2) 100%);
+        width: 3rem;
+        height: 40rem;
+      }
+
+      &:hover {
+        .icon {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+
+    .next-button {
+      @include outline-none;
+      position: absolute;
+      bottom: 30rem;
+      right: 6rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 6rem;
+        bottom: -17.5rem;
+        background: linear-gradient(270deg, rgba(225, 225, 225, 0.2) 0%, rgba(212,212,212,0.2) 35%, rgba(49, 49, 49, 0.2) 100%);
+        width: 3rem;
+        height: 40rem;
+      }
+
+      &:hover {
+        .icon {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+
+    .icon {
+      width: 5rem;
+      height: 5rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .dot-container {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      z-index: 1;
+
+      .dot {
+        @include outline-none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.45);
+        }
+
+        &.active {
+          background-color: #dacd6e;
+        }
+      }
+    }
+  }
+}
+
+.window-small {
+  .background-carousel {
+  }
+}

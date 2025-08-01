@@ -1,0 +1,60 @@
+@import 'src/assets/stylesheet/config';
+.cloud-data-action-cell {
+  .action-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 15rem;
+    .action-button {
+      @include center-item;
+      min-width: 7rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .action-button2 {
+      @include center-item;
+      min-width: 10rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .i-button {
+      @include center-item;
+      min-width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: orange;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}

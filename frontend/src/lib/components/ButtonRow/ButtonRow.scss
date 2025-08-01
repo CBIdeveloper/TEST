@@ -1,0 +1,13 @@
+@import 'src/assets/stylesheet/config';
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  padding-bottom: $size-default-bottom-padding;
+}
+
+.window-small {
+  .button-row {
+  }
+}

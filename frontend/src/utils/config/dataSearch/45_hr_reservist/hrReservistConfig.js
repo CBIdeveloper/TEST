@@ -1,0 +1,590 @@
+import BraidingItem from '../baseModels/BraidingItem';
+import ConfigListItem from '../baseModels/ConfigListItem';
+import KeyListItem from '../baseModels/KeyListItem';
+
+import ApiService from '../../../api/ApiService';
+import InformationRetrievalService from '../../../api/instances/InformationRetrieval/service';
+
+const hrReservistConfig = new BraidingItem({
+  id: 45,
+  code: '037',
+  name: '後備軍人',
+  type: '人力',
+  typeIndex: '1',
+  mobilizationPlan: '軍事動員方案',
+  mobilizationPlanId: 4,
+  mobilizationClassification: '軍隊',
+  mobilizationClassificationId: 31,
+  firstLevelAgency: '國防部',
+  firstLevelAgencyId: '',
+  secondaryAgency: '全動署動管處',
+  secondaryAgencyId: '',
+
+  specialQuery: true,
+
+  fetchDetailData: (id) => ApiService.hrReservist.readHrReservistById(id),
+  fetchCategoryData: ApiService.hrReservist.readHrReservistPagination,
+  queryCategoryData: ApiService.hrReservist.readHrReservistQueryPagination,
+
+  fetchUniqueDetailData: (id) =>
+    ApiService.hrReservist.readUniqueHrReservistById(id),
+  fetchUniqueCategoryData:
+    ApiService.uniqueHrReservistPid.readUniqueHrReservistPidPagination,
+  queryUniqueCategoryData: async ({ query, take, skip }) => {
+    const pidList =
+      await ApiService.uniqueHrReservistPid.readUniqueHrReservistPidQueryPagination(
+        { query, take, skip },
+      );
+    const data = pidList.items.map((item) => item.pid);
+    const tableData =
+      await InformationRetrievalService.getUniqueHrReservistPids(data);
+    return {
+      ...pidList,
+      items: tableData,
+    };
+  },
+
+  configList: [
+    new ConfigListItem({
+      sectionTitle: '基本資料',
+      keyList: [
+        new KeyListItem({ key: 'name', keyTitle: '姓名' }),
+        new KeyListItem({ key: 'birthdate', keyTitle: '出生年月日' }),
+        new KeyListItem({ key: 'gender', keyTitle: '性別' }),
+        new KeyListItem({ key: 'pid', keyTitle: '身分證字號' }),
+        new KeyListItem({ key: 'habitation', keyTitle: '戶籍地' }),
+        new KeyListItem({ key: 'habitatCity', keyTitle: '戶籍縣市別' }),
+        new KeyListItem({ key: 'habitatTown', keyTitle: '戶籍鄉鎮市區別' }),
+        new KeyListItem({ key: 'habitatVillage', keyTitle: '戶籍村里別' }),
+      ],
+    }),
+    new ConfigListItem({
+      sectionTitle: '編管資料',
+      keyList: [
+        new KeyListItem({ key: 'manageAvailable', keyTitle: '編管區分' }),
+        new KeyListItem({ key: 'manageType', keyTitle: '編管類型' }),
+        new KeyListItem({ key: 'manageUnit', keyTitle: '編管機構' }),
+        new KeyListItem({ key: 'managePlace', keyTitle: '編管地點' }),
+        new KeyListItem({ key: 'manageCity', keyTitle: '編管縣市別' }),
+        new KeyListItem({ key: 'manageTown', keyTitle: '編管鄉鎮市區別' }),
+        new KeyListItem({ key: 'manageVillage', keyTitle: '編管村里別' }),
+      ],
+    }),
+    new ConfigListItem({
+      sectionTitle: '動員演訓(徵用情形)',
+      keyList: [
+        new KeyListItem({ key: 'planType', keyTitle: '演訓類別' }),
+        new KeyListItem({ key: 'planUnit', keyTitle: '召訓機關' }),
+        new KeyListItem({ key: 'planTime', keyTitle: '演訓時間' }),
+        new KeyListItem({ key: 'planDay', keyTitle: '演訓天數' }),
+        new KeyListItem({ key: 'planPlace', keyTitle: '演訓地點' }),
+        new KeyListItem({ key: 'planCity', keyTitle: '演訓縣市別' }),
+        new KeyListItem({ key: 'planTown', keyTitle: '演訓鄉鎮市區別' }),
+        new KeyListItem({ key: 'planVillage', keyTitle: '演訓村里別' }),
+      ],
+    }),
+    new ConfigListItem({
+      sectionTitle: '人力資訊',
+      keyList: [
+        new KeyListItem({ key: 'updatedateString', keyTitle: '異動時間' }),
+        new KeyListItem({ key: 'mainCity', keyTitle: '主充縣市' }),
+        new KeyListItem({ key: 'militaryType', keyTitle: '軍種' }),
+        new KeyListItem({ key: 'militaryClass', keyTitle: '階級' }),
+        new KeyListItem({ key: 'serviceType', keyTitle: '役別' }),
+        new KeyListItem({
+          key: 'unavailableCondition',
+          keyTitle: '不可充用條件',
+        }),
+        new KeyListItem({
+          key: 'unavailableElement',
+          keyTitle: '不可充用因素',
+        }),
+        new KeyListItem({ key: 'callTimes', keyTitle: '召集次數' }),
+        new KeyListItem({ key: 'callDays', keyTitle: '召集天數' }),
+        new KeyListItem({ key: 'retireDateString', keyTitle: '退伍日期' }),
+        new KeyListItem({ key: 'skillMain', keyTitle: '專長類別(主)' }),
+        new KeyListItem({ key: 'skill1', keyTitle: '專長次一' }),
+        new KeyListItem({ key: 'skill2', keyTitle: '專長次二' }),
+        new KeyListItem({ key: 'skill3', keyTitle: '專長次三' }),
+        new KeyListItem({ key: 'skillCivil', keyTitle: '民力編管專長' }),
+      ],
+    }),
+  ],
+  planConfigList: [
+    new ConfigListItem({
+      sectionTitle: '動員符號',
+      keyList: [
+        new KeyListItem({ key: 'planCode', keyTitle: '動員符號' }),
+        new KeyListItem({ key: 'manageType', keyTitle: '編管類型' }),
+        new KeyListItem({ key: 'militaryType', keyTitle: '符號單位' }),
+        new KeyListItem({ key: 'city', keyTitle: '符號縣市' }),
+        new KeyListItem({ key: 'conveneCode', keyTitle: '教召符號' }),
+        new KeyListItem({ key: 'planType', keyTitle: '演訓類別' }),
+        new KeyListItem({
+          key: 'conveneStartString',
+          keyTitle: '教召起始日期',
+        }),
+        new KeyListItem({ key: 'conveneEndString', keyTitle: '教召終止日期' }),
+        new KeyListItem({ key: 'conveneDays', keyTitle: '教召終止日期' }),
+      ],
+    }),
+  ],
+  categoryTableHeader: [
+    {
+      Header: '姓名',
+      accessor: 'name',
+    },
+    {
+      Header: '身分證字號',
+      accessor: 'pid',
+    },
+    {
+      Header: '編管類型',
+      accessor: 'manageType',
+    },
+    {
+      Header: '編管機構',
+      accessor: 'manageUnit',
+    },
+    {
+      Header: '編管地點',
+      accessor: 'managePlace',
+    },
+  ],
+  criteriaList: [
+    {
+      id: 1,
+      chineseField: '序號',
+      englishField: 'id',
+      dataType: '',
+      type: 'int',
+      length: '',
+      remark: 'PK',
+    },
+    {
+      id: 2,
+      chineseField: '統號',
+      englishField: 'pid',
+      dataType: '',
+      type: 'nvarchar',
+      length: 20,
+      remark: '身分證字號',
+    },
+    {
+      id: 3,
+      chineseField: '姓名',
+      englishField: 'name',
+      dataType: '',
+      type: 'nvarchar',
+      length: 200,
+      remark: '1.來源資料供系統比對運用\n2.系統資料查詢採半遮蔽\n3.可輸入英文、羅馬拼音、小數點\n4.原住民特殊符號',
+    },
+    {
+      id: 4,
+      chineseField: '出生',
+      englishField: 'birthdate',
+      dataType: '',
+      type: 'datetime',
+      length: '',
+      remark: '出生',
+    },
+    {
+      id: 5,
+      chineseField: '軍種',
+      englishField: 'military_type',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '軍種',
+    },
+    {
+      id: 6,
+      chineseField: '階級',
+      englishField: 'military_class',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '階級',
+    },
+    {
+      id: 7,
+      chineseField: '離營日期',
+      englishField: 'retiredate',
+      dataType: '',
+      type: 'datetime',
+      length: 50,
+      remark: '無, 拿來計算[退伍日期](8年內、9-12年、13年以上',
+    },
+    {
+      id: 8,
+      chineseField: '役別',
+      englishField: 'service_type',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '役別',
+    },
+    {
+      id: 9,
+      chineseField: '體位',
+      englishField: 'bodyposition',
+      dataType: '',
+      type: 'nvarchar',
+      length: 10,
+      remark: '',
+    },
+    {
+      id: 10,
+      chineseField: '主專',
+      englishField: 'skill_main_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '',
+    },
+    {
+      id: 11,
+      chineseField: '主專中文',
+      englishField: 'skill_main',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '專長項目(主)',
+    },
+    {
+      id: 12,
+      chineseField: '次專一',
+      englishField: 'skill_1_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '',
+    },
+    {
+      id: 13,
+      chineseField: '次專一中文',
+      englishField: 'skill_1',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '專長次一',
+    },
+    {
+      id: 14,
+      chineseField: '次專二',
+      englishField: 'skill_2_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '',
+    },
+    {
+      id: 15,
+      chineseField: '次專二中文',
+      englishField: 'skill_2',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '專長次二',
+    },
+    {
+      id: 16,
+      chineseField: '次專三',
+      englishField: 'skill_3_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '',
+    },
+    {
+      id: 17,
+      chineseField: '次專三中文',
+      englishField: 'skill_3',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '專長次三',
+    },
+    {
+      id: 18,
+      chineseField: '縣市',
+      englishField: 'city',
+      dataType: '',
+      type: 'nvarchar',
+      length: 10,
+      remark: '[主充縣市]及[戶籍地]',
+    },
+    {
+      id: 19,
+      chineseField: '鄉鎮市區',
+      englishField: 'town',
+      dataType: '',
+      type: 'nvarchar',
+      length: 10,
+      remark: '',
+    },
+    {
+      id: 20,
+      chineseField: '暫一因素',
+      englishField: 'temp1_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 21,
+      chineseField: '暫一中文',
+      englishField: 'temp1',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 22,
+      chineseField: '暫二因素',
+      englishField: 'temp2_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 23,
+      chineseField: '暫二中文',
+      englishField: 'temp2',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 24,
+      chineseField: '特不充用',
+      englishField: 'special_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 25,
+      chineseField: '特不中文',
+      englishField: 'special',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 26,
+      chineseField: '輔導幹部',
+      englishField: 'cadre_code',
+      dataType: '',
+      type: 'nvarchar',
+      length: 50,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 27,
+      chineseField: '幹部中文',
+      englishField: 'cadre',
+      dataType: '',
+      type: 'nvarchar',
+      length: 100,
+      remark: '用9,20~27 欄位寫入[不可充用因素]及[不可充用條件]',
+    },
+    {
+      id: 28,
+      chineseField: '教召次數',
+      englishField: 'convene_times',
+      dataType: '',
+      type: 'int',
+      length: '',
+      remark: '',
+    },
+    {
+      id: 29,
+      chineseField: "教召天數",
+      englishField: "convene_days",
+      dataType: "",
+      type: "int",
+      length: "",
+      remark: ""
+    },
+    {
+      id: 30,
+      chineseField: "教召日期",
+      englishField: "convene_date",
+      dataType: "",
+      type: "datetime",
+      length: "",
+      remark: ""
+    },
+    {
+      id: 31,
+      chineseField: "累計次數",
+      englishField: "total_times",
+      dataType: "",
+      type: "int",
+      length: "",
+      remark: "召集次數"
+    },
+    {
+      id: 32,
+      chineseField: "累計天數",
+      englishField: "total_days",
+      dataType: "",
+      type: "int",
+      length: "",
+      remark: "召集天數"
+    },
+    {
+      id: 33,
+      chineseField: "動員註記",
+      englishField: "mobilize_note",
+      dataType: "",
+      type: "nvarchar",
+      length: 10,
+      remark: "編管區分(可充用/不可充用)"
+    },
+    {
+      id: 34,
+      chineseField: "動員符號",
+      englishField: "mobilize_sign",
+      dataType: "",
+      type: "nvarchar",
+      length: 30,
+      remark: "20, 22, 24, 26 判斷後轉入 編管類型"
+    },
+    {
+      id: 35,
+      chineseField: "編制職稱",
+      englishField: "managetitle_code",
+      dataType: "",
+      type: "nvarchar",
+      length: "50",
+      remark: ""
+    },
+    {
+      id: 36,
+      chineseField: "編制職稱中文",
+      englishField: "managetitle",
+      dataType: "",
+      type: "nvarchar",
+      length: 100,
+      remark: "編制職稱中文"
+    },
+    {
+      id: 37,
+      chineseField: "編制專長",
+      englishField: "manageskill_code",
+      dataType: "",
+      type: "nvarchar",
+      length: 50,
+      remark: ""
+    },
+    {
+      id: 38,
+      chineseField: "編制專長中文",
+      englishField: "manageskill",
+      dataType: "",
+      type: "nvarchar",
+      length: 100,
+      remark: "編制專長中文"
+    },
+    {
+      id: 39,
+      chineseField: "新增人員",
+      englishField: "cre_user",
+      dataType: "",
+      type: "nvarchar",
+      length: 30,
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 40,
+      chineseField: "新增日期",
+      englishField: "cre_date",
+      dataType: "",
+      type: "datetime",
+      length: "",
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 41,
+      chineseField: "修改人員",
+      englishField: "update_user",
+      dataType: "",
+      type: "nvarchar",
+      length: 30,
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 42,
+      chineseField: "修改日期",
+      englishField: "update_date",
+      dataType: "",
+      type: "datetime",
+      length: "",
+      remark: "編管機關毋須填寫\n資料時間"
+    },
+    {
+      id: 43,
+      chineseField: "傳輸人員",
+      englishField: "upload_user",
+      dataType: "",
+      type: "nvarchar",
+      length: 30,
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 44,
+      chineseField: "傳輸日期",
+      englishField: "upload_date",
+      dataType: "",
+      type: "datetime",
+      length: "",
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 45,
+      chineseField: "資料狀態",
+      englishField: "data_status",
+      dataType: "",
+      type: "nvarchar",
+      length: 10,
+      remark: "編管機關毋須填寫\n1.暫存狀態\n2.正式狀態\n3.已傳送"
+    },
+    {
+      id: 46,
+      chineseField: "審認狀態",
+      englishField: "approval_status",
+      dataType: "",
+      type: "nvarchar",
+      length: 10,
+      remark: "編管機關毋須填寫\n1.已審認\n2.未審認"
+    },
+    {
+      id: 47,
+      chineseField: "審認人員",
+      englishField: "approval_user",
+      dataType: "",
+      type: "nvarchar",
+      length: 30,
+      remark: "編管機關毋須填寫"
+    },
+    {
+      id: 48,
+      chineseField: "審認日期",
+      englishField: "approval_date",
+      dataType: "",
+      type: "datetime",
+      length: "",
+      remark: "編管機關毋須填寫"
+    }
+  ],
+});
+
+export default hrReservistConfig;

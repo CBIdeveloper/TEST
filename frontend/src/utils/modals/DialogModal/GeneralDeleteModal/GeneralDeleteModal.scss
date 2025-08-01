@@ -1,0 +1,28 @@
+@import 'src/assets/stylesheet/config';
+
+.general-delete-modal {
+  width: 35rem;
+  max-width: 100%;
+
+  .message {
+    font-size: $font-size-general;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .button-group {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+
+    .cancel-button {
+      @include normal-button;
+    }
+
+    .delete-button {
+      @include danger-button;
+    }
+  }
+}

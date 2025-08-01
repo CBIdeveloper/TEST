@@ -1,0 +1,79 @@
+@import 'src/assets/stylesheet/config';
+
+.plan-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 31rem;
+  height: 7.5rem;
+  box-sizing: border-box;
+  box-shadow: $box-shadow-default;
+  border-radius: $border-radius-default;
+  border: 1px solid transparent;
+  overflow: hidden;
+
+  .vertical-line {
+    width: 1rem;
+    height: 7.5rem;
+  }
+
+  .plain-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    height: 7.5rem;
+    flex: 1;
+
+    .download-icon {
+      width: 3rem;
+      height: 3rem;
+      margin: 1.5rem;
+    }
+
+    .plan-container {
+      display: flex;
+      flex-direction: column;
+
+      .plan-title {
+        font-size: $font-size-description;
+        line-height: 1.9rem;
+      }
+
+      .plan-unit {
+        font-size: $font-size-note;
+        line-height: 1.6rem;
+        color: $color-black;
+      }
+    }
+  }
+
+  &:hover {
+    .plain-item-content {
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  &.green {
+    border-color: $color-plan-green;
+    background-color: $color-plan-green;
+    color: $color-plan-green;
+  }
+
+  &.red {
+    border-color: $color-plan-red;
+    background-color: $color-plan-red;
+    color: $color-plan-red;
+  }
+
+  &.orange {
+    border-color: $color-plan-orange;
+    background-color: $color-plan-orange;
+    color: $color-plan-orange;
+  }
+}
+
+.window-small {
+  .plan-item {
+  }
+}

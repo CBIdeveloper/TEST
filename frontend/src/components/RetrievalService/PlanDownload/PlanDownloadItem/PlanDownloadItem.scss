@@ -1,0 +1,90 @@
+@import 'src/assets/stylesheet/config';
+
+.plan-download-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+  width: 32rem;
+  height: 34.6rem;
+  box-shadow: $box-shadow-default;
+  border-radius: $border-radius-default;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .top-strip {
+    width: 100%;
+    height: 1.5rem;
+
+    &.purple {
+      background-color: $color-plan-purple;
+    }
+
+    &.green {
+      background-color: $color-plan-green;
+    }
+
+    &.orange {
+      background-color: $color-plan-orange;
+    }
+
+    &.red {
+      background-color: $color-plan-red;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &.purple {
+      color: $color-plan-purple;
+    }
+
+    &.green {
+      color: $color-plan-green;
+    }
+
+    &.orange {
+      color: $color-plan-orange;
+    }
+
+    &.red {
+      color: $color-plan-red;
+    }
+
+    .plan-image {
+      height: 11.6rem;
+      width: auto;
+    }
+
+    .plan-title {
+      font-size: $font-size-title;
+      font-weight: $font-weight-bold;
+      line-height: 2.9rem;
+      padding-top: 0.6rem;
+    }
+
+    .plan-description {
+      font-size: $font-size-general;
+      line-height: 2.2rem;
+    }
+  }
+
+  .download-button {
+    @include center-item;
+    @include outline-button($color-download);
+    width: 14.5rem;
+    height: 3.5rem;
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.window-small {
+  .plan-download-item {
+  }
+}

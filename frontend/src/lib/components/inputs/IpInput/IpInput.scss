@@ -1,0 +1,41 @@
+@import 'src/assets/stylesheet/config';
+
+.ip-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+    max-width: initial;
+
+    .ip-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 0.5rem;
+
+      .dot {
+        font-size: $font-size-general;
+        font-weight: $font-weight-bold;
+        color: $color-black;
+        padding-bottom: 0.5rem;
+      }
+
+      .input-container {
+        padding: 0;
+
+        .form-input {
+          max-width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.window-small {
+  .ip-input {
+  }
+}

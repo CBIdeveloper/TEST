@@ -1,0 +1,18 @@
+@import 'src/assets/stylesheet/config';
+
+.grey-section-title {
+  height: 4rem;
+  box-sizing: border-box;
+  background: $color-background;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: $color-black;
+  font-size: $font-size-white-text;
+  font-weight: $font-weight-bold;
+  line-height: 2rem;
+  padding: 1rem 1.2rem;
+}
+
+.window-small {
+  .grey-section-title {
+  }
+}

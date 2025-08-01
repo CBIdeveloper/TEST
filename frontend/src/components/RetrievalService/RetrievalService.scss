@@ -1,0 +1,15 @@
+@import "src/assets/stylesheet/config";
+
+.retrieval-service {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 4.4rem 0;
+  min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+  box-sizing: border-box;
+}
+
+.window-small {
+  .retrieval-service {
+
+  }
+}

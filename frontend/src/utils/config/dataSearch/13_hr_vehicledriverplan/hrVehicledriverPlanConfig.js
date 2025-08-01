@@ -1,0 +1,362 @@
+import BraidingItem from '../baseModels/BraidingItem';
+import ConfigListItem from '../baseModels/ConfigListItem';
+import KeyListItem from '../baseModels/KeyListItem';
+
+import ApiService from '../../../api/ApiService';
+import HrVehicledriverPlanResponse from '../../../dataModels/HrVehicledriverPlan/HrVehicledriverPlanResponse';
+
+const hrVehicledriverConfig = new BraidingItem({
+  id: 13,
+  code: '908',
+  name: '車輛駕駛人員(演訓人力)',
+  type: '人力',
+  typeIndex: '1',
+  mobilizationPlan: '交通動員方案',
+  mobilizationPlanId: 2,
+  mobilizationClassification: '車輛(車輛)',
+  mobilizationClassificationId: 11,
+  firstLevelAgency: '交通部',
+  firstLevelAgencyId: '',
+  secondaryAgency: '公路局',
+  secondaryAgencyId: '',
+
+  fetchDetailData: (id) =>
+    ApiService.hrVehicledriver.readHrVehicledriverById(id),
+  fetchCategoryData: ApiService.hrVehicledriver.readHrVehicledriverPagination,
+  queryCategoryData:
+    ApiService.hrVehicledriver.readHrVehicledriverQueryPagination,
+  fetchPlanData: ({ pid }) =>
+    ApiService.hrVehicledriverPlan.readHrVehicledriverPlanByPid(pid),
+
+  planDataModel: HrVehicledriverPlanResponse,
+
+  fetchUniqueDetailData: (id) =>
+    ApiService.hrVehicledriver.readUniqueHrVehicledriverById(id),
+  fetchUniqueCategoryData:
+    ApiService.hrVehicledriver.readUniqueHrVehicledriverPagination,
+  queryUniqueCategoryData:
+    ApiService.hrVehicledriver.readUniqueHrVehicledriverQueryPagination,
+
+  configList: [
+    new ConfigListItem({
+      sectionTitle: '基本資料',
+      keyList: [
+        new KeyListItem({ key: 'name', keyTitle: '姓名' }),
+        new KeyListItem({ key: 'birthdate', keyTitle: '出生年月日' }),
+        new KeyListItem({ key: 'age', keyTitle: '年齡' }),
+        new KeyListItem({ key: 'pid', keyTitle: '身分證字號' }),
+        new KeyListItem({ key: 'gender', keyTitle: '性別' }),
+        new KeyListItem({ key: 'habitation', keyTitle: '戶籍地' }),
+        new KeyListItem({ key: 'habitatCity', keyTitle: '戶籍縣市別' }),
+        new KeyListItem({ key: 'habitatTown', keyTitle: '戶籍鄉鎮市區別' }),
+        new KeyListItem({ key: 'habitatVillage', keyTitle: '戶籍村里別' }),
+        new KeyListItem({ key: 'abode', keyTitle: '居住所' }),
+        new KeyListItem({ key: 'abodeCity', keyTitle: '居住縣市別' }),
+        new KeyListItem({ key: 'abodeTown', keyTitle: '居住鄉鎮市區別' }),
+        new KeyListItem({ key: 'abodeVillage', keyTitle: '居住村里別' }),
+        new KeyListItem({ key: 'tel', keyTitle: '聯絡電話' }),
+      ],
+    }),
+    new ConfigListItem({
+      sectionTitle: '編管資料',
+      keyList: [
+        new KeyListItem({ key: 'manageType', keyTitle: '編管類型' }),
+        new KeyListItem({ key: 'manageUnit', keyTitle: '編管機構' }),
+        new KeyListItem({ key: 'managePlace', keyTitle: '編管地點' }),
+        new KeyListItem({ key: 'manageCity', keyTitle: '編管縣市別' }),
+        new KeyListItem({ key: 'manageTown', keyTitle: '編管鄉鎮市區別' }),
+        new KeyListItem({ key: 'manageVillage', keyTitle: '編管村里別' }),
+      ],
+    }),
+    new ConfigListItem({
+      sectionTitle: '人力資訊',
+      keyList: [
+        new KeyListItem({ key: 'updatedateString', keyTitle: '異動時間' }),
+        new KeyListItem({ key: 'drvinglic', keyTitle: '駕照種類' }),
+        new KeyListItem({ key: 'licstatus', keyTitle: '駕照狀態' }),
+        new KeyListItem({ key: 'cartype', keyTitle: '車別' }),
+      ],
+    }),
+  ],
+  planConfigList: [
+    new ConfigListItem({
+      sectionTitle: '動員演訓(徵用情形)',
+      keyList: [
+        new KeyListItem({ key: 'planType', keyTitle: '演訓類別' }),
+        new KeyListItem({ key: 'planStart', keyTitle: '演訓時間(起)' }),
+        new KeyListItem({ key: 'planEnd', keyTitle: '演訓時間(迄)' }),
+        new KeyListItem({ key: 'planPlace', keyTitle: '演訓地點' }),
+        new KeyListItem({ key: 'planCity', keyTitle: '演訓縣市別' }),
+        new KeyListItem({ key: 'planTown', keyTitle: '演訓鄉鎮市區別' }),
+        new KeyListItem({ key: 'planVillage', keyTitle: '演訓村里別' }),
+        new KeyListItem({ key: 'levyUnit', keyTitle: '徵用機關' }),
+        new KeyListItem({ key: 'levyCartype', keyTitle: '徵用車別' }),
+      ],
+    }),
+  ],
+  categoryTableHeader: [
+    {
+      Header: '姓名',
+      accessor: 'name',
+    },
+    {
+      Header: '身分證字號',
+      accessor: 'pid',
+    },
+    {
+      Header: '編管類型',
+      accessor: 'manageType',
+    },
+    {
+      Header: '編管機構',
+      accessor: 'manageUnit',
+    },
+    {
+      Header: '編管地點',
+      accessor: 'managePlace',
+    },
+  ],
+  criteriaList: [
+    {
+      id: 1,
+      chineseField: '序號',
+      englishField: 'id',
+      dataType: '',
+      type: 'int',
+      length: '',
+      remark: 'PK',
+    },
+    {
+      id: 2,
+      chineseField: '姓名',
+      englishField: 'name',
+      dataType: '基本資料',
+      type: 'nvarchar',
+      length: 200,
+      remark:
+        '【必填】完整不遮蔽\n1.來源資料供系統比對運用\n2.系統資料查詢採半遮蔽\n3.依演習類別計次，來源資料姓名具重複性\n4.可輸入英文、羅馬拼音、小數點\n5.原住民特殊符號',
+    },
+    {
+      id: 3,
+      chineseField: '身分證字號',
+      englishField: 'pid',
+      dataType: '基本資料',
+      type: 'nvarchar',
+      length: 20,
+      remark:
+        '【必填】完整不遮蔽\n1.來源資料供系統比對運用\n2.系統資料查詢採半遮蔽\n3.依演習類別計次，來源資料姓名具重複性',
+    },
+    {
+      id: 4,
+      chineseField: '演訓類別',
+      englishField: 'plan_type',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 30,
+      remark:
+        '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用類別】欄位資料',
+    },
+    {
+      id: 5,
+      chineseField: '演訓時間(起)',
+      englishField: 'plan_start',
+      dataType: '動員演訓(徵用情形)',
+      type: 'datetime',
+      remark:
+        '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用時間】欄位資料',
+    },
+    {
+      id: 6,
+      chineseField: '演訓時間(迄)',
+      englishField: 'plan_end',
+      dataType: '動員演訓(徵用情形)',
+      type: 'datetime',
+      remark:
+        '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用時間】欄位資料',
+    },
+    {
+      id: 7,
+      chineseField: '演訓地點',
+      englishField: 'plan_place',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 200,
+      remark: '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用地點】欄位資料',
+    },
+    {
+      id: 8,
+      chineseField: '演訓縣市別',
+      englishField: 'plan_city',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 10,
+      remark: '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用縣市別】欄位資料',
+    },
+    {
+      id: 9,
+      chineseField: '演訓鄉鎮市區別',
+      englishField: 'plan_town',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 10,
+      remark: '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用鄉鎮市區別】欄位資料',
+    },
+    {
+      id: 10,
+      chineseField: '演訓村里別',
+      englishField: 'plan_village',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 10,
+      remark: '【系統判斷】\n由系統依本編管類別【徵用機關】欄位與【編管類別-車輛輸具】之【徵用機關】欄位比對相同後，\n回饋【編管類別-車輛輸具】之【徵用村里別】欄位資料',
+    },
+    {
+      id: 11,
+      chineseField: '演訓y坐標',
+      englishField: 'plan_y',
+      dataType: '動員演訓(徵用情形)',
+      type: 'decimal',
+      length: 9.6,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 12,
+      chineseField: '演訓x坐標',
+      englishField: 'plan_x',
+      dataType: '動員演訓(徵用情形)',
+      type: 'decimal',
+      length: 10.6,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 13,
+      chineseField: '徵用機關',
+      englishField: 'levy_unit',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 50,
+      remark:
+        '【必填】\n由公路總局依物力簽證需求後掌握各縣市併同車輛受徵用之駕駛人員填入徵用機關',
+    },
+    {
+      id: 14,
+      chineseField: '徵用車別',
+      englishField: 'levy_cartype',
+      dataType: '動員演訓(徵用情形)',
+      type: 'nvarchar',
+      length: 30,
+      remark:
+        '【必填】\n1.由公路總局依物力簽證需求後掌握各縣市併同機具受徵用之駕駛人員填入徵用車別\n2.【BI】儀表板-動員指標：分析以單1專長人數',
+    },
+    {
+      id: 15,
+      chineseField: '車牌號碼',
+      englishField: 'license_plate',
+      dataType: '機具資訊',
+      type: 'nvarchar',
+      length: 50,
+      remark: '【必填】無中文字',
+    },
+    {
+      id: 16,
+      chineseField: '異動時間',
+      englishField: 'updatedate',
+      dataType: '人力資訊',
+      type: 'datetime',
+      length: '',
+      remark: '系統判斷',
+    },
+    {
+      id: 17,
+      chineseField: '新增人員',
+      englishField: 'cre_user',
+      dataType: '',
+      type: 'nvarchar',
+      length: 30,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 18,
+      chineseField: '新增日期',
+      englishField: 'cre_date',
+      dataType: '',
+      type: 'datetime',
+      length: '',
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 19,
+      chineseField: '修改人員',
+      englishField: 'update_user',
+      dataType: '',
+      type: 'nvarchar',
+      length: 30,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 20,
+      chineseField: '修改日期',
+      englishField: 'update_date',
+      dataType: '',
+      type: 'datetime',
+      length: '',
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 21,
+      chineseField: '傳輸人員',
+      englishField: 'upload_user',
+      dataType: '',
+      type: 'nvarchar',
+      length: 30,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 22,
+      chineseField: '傳輸日期',
+      englishField: 'upload_date',
+      dataType: '',
+      type: 'datetime',
+      length: '',
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 23,
+      chineseField: '資料狀態',
+      englishField: 'data_status',
+      dataType: '',
+      type: 'nvarchar',
+      length: 10,
+      remark: '編管機關毋須填寫\n1.暫存狀態\n2.正式狀態\n3.已傳送',
+    },
+    {
+      id: 24,
+      chineseField: '審認狀態',
+      englishField: 'approval_status',
+      dataType: '',
+      type: 'nvarchar',
+      length: 10,
+      remark: '編管機關毋須填寫\n1.已審認\n2.未審認',
+    },
+    {
+      id: 25,
+      chineseField: '審認人員',
+      englishField: 'approval_user',
+      dataType: '',
+      type: 'nvarchar',
+      length: 30,
+      remark: '編管機關毋須填寫',
+    },
+    {
+      id: 26,
+      chineseField: '審認日期',
+      englishField: 'approval_date',
+      dataType: '',
+      type: 'datetime',
+      length: '',
+      remark: '編管機關毋須填寫',
+    },
+  ],
+});
+
+export default hrVehicledriverConfig;

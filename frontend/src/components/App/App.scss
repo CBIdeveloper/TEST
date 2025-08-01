@@ -1,0 +1,40 @@
+@import 'src/assets/stylesheet/config';
+
+html {
+  font-size: 10px;
+  font-weight: $font-weight-normal;
+  letter-spacing: $letter-spacing-default;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  // min-width: 30rem;
+  min-width: 120rem;
+  flex-direction: column;
+  background-color: $color-background;
+}
+
+.viewport {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  .main-content {
+    flex: 1;
+    min-width: 0;
+    min-height: calc(100vh - 6rem);
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: -apple-system, Arial, Helvetica, 'LiHei Pro', '微軟正黑體',
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', '新細明體',
+    'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  margin: 0;
+}

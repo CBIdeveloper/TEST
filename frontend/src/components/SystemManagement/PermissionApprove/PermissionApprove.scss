@@ -1,0 +1,52 @@
+@import "src/assets/stylesheet/config";
+
+.permission-approve {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .search-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.2rem;
+    column-gap: 3.2rem;
+    min-width: 0;
+  }
+
+  .text-containers,
+  .date-containers {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .status-container {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .select-input {
+      .form-input {
+        min-width: 9rem;
+        max-width: 9rem;
+      }
+    }
+  }
+
+  .use-date-container {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .status-title {
+      font-size: 16px;
+    }
+  }
+}

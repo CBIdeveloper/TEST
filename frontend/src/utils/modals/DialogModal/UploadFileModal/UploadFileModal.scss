@@ -1,0 +1,61 @@
+@import 'src/assets/stylesheet/config';
+
+.upload-file-modal {
+  width: 35rem;
+  max-width: 100%;
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    font-size: $font-size-general;
+    text-align: center;
+    padding: 2rem 0;
+    align-items: center;
+
+    .upload-file-button {
+      @include general-button;
+      min-width: fit-content;
+      max-width: fit-content;
+    }
+
+    .file-input {
+      display: none;
+    }
+
+    .file-name {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+
+      .file-name-title {
+      }
+
+      .file {
+        word-break: break-all;
+        flex: 1;
+        text-align: left;
+      }
+    }
+  }
+
+  .button-group {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+
+    .cancel-button {
+      @include normal-button;
+    }
+
+    .upload-button {
+      @include general-button;
+
+      &.disabled {
+        @include disabled;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import 'src/assets/stylesheet/config';
+.cloud-data-search-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  gap: 1rem;
+}

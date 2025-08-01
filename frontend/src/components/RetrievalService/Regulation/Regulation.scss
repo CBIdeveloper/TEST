@@ -1,0 +1,22 @@
+@import 'src/assets/stylesheet/config';
+
+.regulation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .regulation-container {
+    @include center-item;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    max-width: 100rem;
+  }
+}
+
+.window-small {
+  .regulation {
+  }
+}

@@ -1,0 +1,23 @@
+@import 'src/assets/stylesheet/config';
+
+.cloud-data-action-cell4 {
+  .action-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 15rem;
+  }
+}
+
+.cloud-data-action-orange {
+  color: orange;
+}
+
+.cloud-data-action-green {
+  color: green;
+}
+
+.cloud-data-action-red {
+  color: red;
+}

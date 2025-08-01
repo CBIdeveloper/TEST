@@ -1,0 +1,59 @@
+@import 'src/assets/stylesheet/config';
+
+.multiple-select-input {
+  @include input-component;
+  &.zen {
+    padding: 0;
+    .input-title,
+    .error-message {
+      display: none;
+    }
+  }
+
+  .input-title {
+    @include input-title;
+    white-space: pre-wrap;
+    text-align: left;
+  }
+
+  .option-section {
+    @include input-container;
+    @include no-select;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5rem;
+    align-self: center;
+    .column {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
+  .select-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5rem;
+    align-items: flex-start;
+    min-height: 3.5rem;
+
+    &.display {
+      @include disabled;
+    }
+
+    &.horizontal {
+      flex-direction: row;
+      grid-gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .trailing-icon {
+      @include input-trailing-icon;
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}

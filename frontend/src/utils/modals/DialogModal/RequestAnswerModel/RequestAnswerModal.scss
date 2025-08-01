@@ -1,0 +1,126 @@
+@import 'src/assets/stylesheet/config';
+
+.request-answer-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.1rem;
+  height: 80rem;
+  width: 80rem;
+  max-height: 100%;
+  max-width: 100%;
+  .table-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+    font-size: $font-size-description;
+  }
+
+  th {
+    color: white;
+    background-color: #74abf3;
+    font-weight: bold;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+
+  .contact-item-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    margin-top: 1.5rem;
+    overflow-y: auto;
+  }
+  .button-context-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-bottom: 10px;
+    .confirm-button {
+      @include center-item;
+      min-width: 7rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .field-people {
+      font-size: $font-size-description;
+    }
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-top: auto;
+    .confirm-button {
+      @include center-item;
+      min-width: 7rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+  .large-textarea {
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+  }
+}

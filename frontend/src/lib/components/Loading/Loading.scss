@@ -1,0 +1,24 @@
+@import 'src/assets/stylesheet/config';
+
+.loading {
+  @include full-space;
+  @include center-item;
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    border: 0.6rem solid #f3f3f3; /* Light grey */
+    border-top: 0.6rem solid $color-feature; /* Black */
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

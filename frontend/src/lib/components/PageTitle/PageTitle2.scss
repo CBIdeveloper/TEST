@@ -1,0 +1,49 @@
+@import 'src/assets/stylesheet/config';
+
+.page-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 2rem;
+
+  .title-container {
+  }
+
+  .breadcrumb-container {
+  }
+}
+.video-link {
+  @include center-item;
+  width: 14rem;
+  height: 3rem;
+  color: white;
+  font-size: $font-size-white-text;
+  font-weight: $font-weight-bold;
+  line-height: 2rem;
+  background-color: $color-blue;
+  border-radius: $border-radius-button;
+  text-decoration: none;
+  margin-right: 4rem;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.window-small {
+  .page-title {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .title-container {
+      order: 2;
+    }
+
+    .breadcrumb-container {
+      order: 1;
+    }
+  }
+}

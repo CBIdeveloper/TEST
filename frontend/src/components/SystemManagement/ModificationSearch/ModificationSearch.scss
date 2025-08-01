@@ -1,0 +1,85 @@
+@import 'src/assets/stylesheet/config';
+
+.modification-search {
+  .search-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.2rem;
+    column-gap: 3.2rem;
+    min-width: 0;
+  }
+
+  .text-containers,
+  .date-containers {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .status-container {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    .status-title {
+      font-size: 14px;
+    }
+    .select-input {
+      .form-input {
+        min-width: 9rem;
+        max-width: 9rem;
+      }
+    }
+  }
+
+  .count-export-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .export-button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      margin-right: 1.5rem;
+
+      .export-button {
+        @include center-item;
+        width: 10rem;
+        height: 3rem;
+        font-size: $font-size-button;
+        font-weight: $font-weight-bold;
+        border-radius: $border-radius-button;
+        color: white;
+        background: $color-linear-blue-grey;
+        line-height: 2rem;
+        margin-left: auto;
+
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+    }
+  }
+
+  .start-date-container {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    .status-title {
+      font-size: 14px;
+    }
+  }
+}
+
+.window-small {
+  .modification-search {
+  }
+}

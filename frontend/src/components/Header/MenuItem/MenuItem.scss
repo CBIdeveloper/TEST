@@ -1,0 +1,53 @@
+@import 'src/assets/stylesheet/config';
+
+.menu-item {
+  @include no-select;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  .menu-text {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .arrow-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.2s;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  .sub-menus {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-options;
+    min-width: 10rem;
+    width: fit-content;
+
+    .sub-menu-item {
+      padding: 1.5rem;
+      font-size: $font-size-general;
+      text-decoration: none;
+      color: $color-black;
+      white-space: nowrap;
+
+      &:hover {
+        color: $color-grey-blue;
+      }
+    }
+  }
+}
+
+.window-small {
+  .menu-item {
+  }
+}

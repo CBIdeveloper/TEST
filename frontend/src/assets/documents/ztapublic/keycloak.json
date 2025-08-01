@@ -1,0 +1,8 @@
+{
+  "realm": "adms",
+  "auth-server-url": "https://adms.oeth.webcomm.com.tw/auth/",
+  "ssl-required": "external",
+  "resource": "adms-portal",
+  "public-client": true,
+  "confidential-port": 0
+}

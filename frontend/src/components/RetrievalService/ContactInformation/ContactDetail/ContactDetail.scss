@@ -1,0 +1,13 @@
+@import "src/assets/stylesheet/config";
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.window-small {
+  .contact-detail {
+
+  }
+}

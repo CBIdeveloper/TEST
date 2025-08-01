@@ -1,0 +1,25 @@
+@import 'src/assets/stylesheet/config';
+
+.select-item {
+  @include outline-none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  width: fit-content;
+  cursor: pointer;
+  align-items: center;
+  // height: 3.5rem;
+  height: 100%;
+
+  .icon {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .item-name {
+    font-size: $font-size-description;
+    font-weight: $font-weight-normal;
+    color: $color-black;
+    align-self: center;
+  }
+}

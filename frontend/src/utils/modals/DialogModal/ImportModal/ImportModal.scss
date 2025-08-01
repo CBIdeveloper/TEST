@@ -1,0 +1,48 @@
+@import 'src/assets/stylesheet/config';
+
+.import-modal {
+  // display: flex;
+  width: 50rem;
+  .horizon {
+    display: flex;
+    @include center-item;
+    gap: 1rem;
+    .action-button {
+      @include center-item;
+      width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .action-button2 {
+      @include center-item;
+      min-width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: orange;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.error-message {
+  @include input-error();
+}

@@ -1,0 +1,17 @@
+@import 'src/assets/stylesheet/config';
+
+.certificate {
+  .certificate-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+
+    .select-container {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import 'src/assets/stylesheet/config';
+
+.q-and-a {
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+  box-sizing: border-box;
+  padding: 4rem 4.4rem 0;
+  flex: 1;
+}
+.button-container {
+  display: flex;
+}
+.subtitle-button {
+  @include center-item;
+  width: 10rem;
+  height: 3rem;
+  color: black;
+  font-size: $font-size-white-text;
+  background-color: #d3d3d3;
+  border: 2px solid #d3d3d3;
+  border-radius: $border-radius-button;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.subtitle-button.clicked {
+  background-color: #4472c4;
+  color: white;
+}
+
+.subtitle-button:hover {
+  background-color: #4472c4;
+  color: white;
+}
+
+.video-button {
+  @include center-item;
+  width: 8rem;
+  height: 2rem;
+  color: black;
+  font-size: $font-size-white-text;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: $border-radius-button;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.video-button.clicked {
+  background-color: #DEA900;
+  color: white;
+}
+
+.video-button:hover {
+  background-color: #DEA900;
+  color: white;
+}
+
+.accountTitle {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: rgb(177, 177, 177);
+  border-radius: $border-radius-form;
+  .teachVideo {
+    margin-left: 1rem;
+    font-size: $font-size-white-text;
+    color: white;
+  }
+}
+
+.question {
+  background-color: aquamarine;
+}
+
+.inner {
+  margin-left: 1rem;
+}
+.window-small {
+  .q-and-a {
+  }
+}

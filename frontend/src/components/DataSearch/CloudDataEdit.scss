@@ -1,0 +1,119 @@
+@import 'src/assets/stylesheet/config';
+
+.cloud-data-edit {
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+  box-sizing: border-box;
+  padding: 4rem 4.4rem 0;
+  flex: 1;
+
+  .mobilization-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid $color-stroke;
+    border-radius: $border-radius-default;
+    background: $color-linear-grey;
+    box-sizing: border-box;
+    padding: 2rem 3.5rem;
+
+    .correct {
+      font-size: $font-size-description;
+      line-height: 2rem;
+      padding-right: 1rem;
+      border-right: 2px solid $color-grey-blue;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .plan-name {
+      font-size: $font-size-description;
+      line-height: 2rem;
+      padding-right: 5rem;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .waring-button {
+    display: flex;
+
+    .waring {
+      margin-right: auto;
+      padding: 0rem 3.5rem;
+      font-size: $font-size-description;
+      color: red;
+    }
+
+    .edit-button {
+      display: flex;
+      gap: 1rem;
+
+      .return {
+        @include center-item;
+        min-width: 7rem;
+        height: 3rem;
+        padding: 0 1rem;
+        font-size: $font-size-description;
+        font-weight: $font-weight-bold;
+        line-height: 2rem;
+        color: white;
+        background: $color-linear-blue-grey;
+        border-radius: $border-radius-button;
+        text-decoration: none;
+
+        &:hover {
+          filter: brightness(110%);
+        }
+      }
+
+      .save {
+        @include center-item;
+        min-width: 7rem;
+        height: 3rem;
+        padding: 0 1rem;
+        font-size: $font-size-description;
+        font-weight: $font-weight-bold;
+        line-height: 2rem;
+        color: white;
+        background: $color-contact-4;
+        border-radius: $border-radius-button;
+        text-decoration: none;
+
+        &:hover {
+          filter: brightness(110%);
+        }
+      }
+    }
+  }
+
+  .k-input-inner,
+  .k-selection-none,
+  .k-selection-full,
+  .k-selection-partial,
+  .k-spreadsheet-formula-bar,
+  .k-spreadsheet-cell-editor,
+  .k-widget.k-tooltip {
+    font-size: 14px;
+  }
+  .k-spreadsheet-active-cell,
+  .k-spreadsheet-cell .k-vertical-align-bottom {
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    // height: 24px;
+    // line-height: 24px;
+  }
+  .k-widget {
+    position: relative;
+    z-index: 0;
+  }
+}

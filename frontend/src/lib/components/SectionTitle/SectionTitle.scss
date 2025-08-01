@@ -1,0 +1,18 @@
+@import "src/assets/stylesheet/config";
+
+.section-title {
+  @include center-item;
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+  color: $color-black;
+  border-left: 0.8rem solid $color-grey-blue;
+  height: 5rem;
+  width: fit-content;
+  padding-left: 1.6rem;
+}
+
+.window-small {
+  .section-title {
+
+  }
+}

@@ -1,0 +1,83 @@
+@import 'src/assets/stylesheet/config';
+
+.business-management-memo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 105rem;
+  // min-height: 44.5rem;
+
+  .memo-section-container {
+    display: flex;
+    flex-direction: column;
+
+    .memo-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .memo-content {
+        @include center-item;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: $font-weight-bold;
+        margin-top: 2.5rem;
+
+        .memo-title {
+          font-size: 2.6rem;
+          line-height: 3.2rem;
+          color: $color-black;
+          text-align: center;
+          white-space: pre-wrap;
+        }
+
+        .memo-unit {
+          font-size: $font-size-white-text;
+          color: $color-black;
+          line-height: 2rem;
+          padding: 0.35rem 0;
+        }
+
+        .memo-status {
+          font-size: $font-size-white-text;
+          line-height: 2rem;
+          background: $color-linear-dark-yellow;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          padding: 0.35rem 0;
+        }
+      }
+    }
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-bottom: 2.2rem;
+
+    .close-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .business-management-memo-modal {
+  }
+}

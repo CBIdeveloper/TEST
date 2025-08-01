@@ -1,0 +1,78 @@
+@import 'src/assets/stylesheet/config';
+
+.access-control-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: $color-black;
+  font-size: $font-size-white-text;
+  font-weight: $font-weight-bold;
+  line-height: 2rem;
+
+  .header {
+    padding: 1rem 1.2rem;
+    height: 4rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: $color-light-blue;
+  }
+
+  .module {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1.5rem 1.2rem;
+    background-color: $color-light-blue;
+    min-width: 25rem;
+
+    .select-item {
+      height: fit-content;
+      filter: brightness(90%);
+    }
+  }
+
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 25rem;
+
+    .task {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      padding: 1.5rem 1.2rem;
+      background: $color-linear-grey;
+      height: 5rem;
+      box-sizing: border-box;
+
+      .select-item {
+        height: fit-content;
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  .access-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .access {
+      display: flex;
+      align-items: center;
+      min-height: 5rem;
+      box-sizing: border-box;
+      padding: 0 1.1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      .option-section {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.window-small {
+  .access-control-list-item {
+  }
+}

@@ -1,0 +1,36 @@
+@import 'src/assets/stylesheet/config';
+
+.form-description {
+  @include input-component;
+
+  .description-title {
+    @include input-title;
+    border-left: none;
+  }
+
+  .description-content {
+    @include input-container;
+    justify-content: center;
+    font-size: $font-size-description;
+    line-height: 2rem;
+    white-space: pre-wrap;
+  }
+  
+  .description-content2 {
+    justify-content: center;
+    font-size: $font-size-description;
+    line-height: 2rem;
+    white-space: pre-wrap;
+  }
+
+  &.left-border {
+    .description-title {
+      border-left: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.window-small {
+  .form-description {
+  }
+}

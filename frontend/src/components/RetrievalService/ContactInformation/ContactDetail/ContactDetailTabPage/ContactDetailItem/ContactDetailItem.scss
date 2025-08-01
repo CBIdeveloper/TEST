@@ -1,0 +1,206 @@
+@import 'src/assets/stylesheet/config';
+
+.contact-detail-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+  width: 30rem;
+  height: 25rem;
+  border-radius: $border-radius-default;
+  box-shadow: $box-shadow-default;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .horizontal-line {
+    width: 30rem;
+    height: 1rem;
+  }
+
+  .contact-detail-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 8rem;
+    height: 7rem;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0 1.5rem;
+
+    .info-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.6rem;
+
+      .info-title {
+        font-size: $font-size-description;
+        line-height: 1.9rem;
+      }
+
+      .info-divider {
+        width: 1px;
+        height: 1.4rem;
+      }
+
+      .info-content {
+        font-size: $font-size-note;
+        line-height: 1.6rem;
+        color: $color-black;
+      }
+    }
+  }
+
+  &.color-contact-1 {
+    .horizontal-line {
+      background-color: $color-contact-1;
+    }
+    .contact-info-container {
+      color: $color-contact-1;
+      .info-divider {
+        background-color: $color-contact-1;
+      }
+    }
+  }
+
+  &.color-contact-2 {
+    .horizontal-line {
+      background-color: $color-contact-2;
+    }
+    .contact-info-container {
+      color: $color-contact-2;
+      .info-divider {
+        background-color: $color-contact-2;
+      }
+    }
+  }
+
+  &.color-contact-3 {
+    .horizontal-line {
+      background-color: $color-contact-3;
+    }
+    .contact-info-container {
+      color: $color-contact-3;
+      .info-divider {
+        background-color: $color-contact-3;
+      }
+    }
+  }
+
+  &.color-contact-4 {
+    .horizontal-line {
+      background-color: $color-contact-4;
+    }
+    .contact-info-container {
+      color: $color-contact-4;
+      .info-divider {
+        background-color: $color-contact-4;
+      }
+    }
+  }
+
+  &.color-contact-5 {
+    .horizontal-line {
+      background-color: $color-contact-5;
+    }
+    .contact-info-container {
+      color: $color-contact-5;
+      .info-divider {
+        background-color: $color-contact-5;
+      }
+    }
+  }
+
+  &.color-contact-6 {
+    .horizontal-line {
+      background-color: $color-contact-6;
+    }
+    .contact-info-container {
+      color: $color-contact-6;
+      .info-divider {
+        background-color: $color-contact-6;
+      }
+    }
+  }
+
+  &.color-contact-7 {
+    .horizontal-line {
+      background-color: $color-contact-7;
+    }
+    .contact-info-container {
+      color: $color-contact-7;
+      .info-divider {
+        background-color: $color-contact-7;
+      }
+    }
+  }
+
+  &.color-contact-8 {
+    .horizontal-line {
+      background-color: $color-contact-8;
+    }
+    .contact-info-container {
+      color: $color-contact-8;
+      .info-divider {
+        background-color: $color-contact-8;
+      }
+    }
+  }
+
+  &.color-contact-9 {
+    .horizontal-line {
+      background-color: $color-contact-9;
+    }
+    .contact-info-container {
+      color: $color-contact-9;
+      .info-divider {
+        background-color: $color-contact-9;
+      }
+    }
+  }
+
+  &.color-contact-10 {
+    .horizontal-line {
+      background-color: $color-contact-10;
+    }
+    .contact-info-container {
+      color: $color-contact-10;
+      .info-divider {
+        background-color: $color-contact-10;
+      }
+    }
+  }
+
+  &.color-contact-11 {
+    .horizontal-line {
+      background-color: $color-black;
+    }
+    .contact-info-container {
+      color: $color-black;
+      .info-divider {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  &.color-contact-12 {
+    .horizontal-line {
+      background-color: $color-contact-12;
+    }
+    .contact-info-container {
+      color: $color-black;
+      .info-divider {
+        background-color: $color-contact-12;
+      }
+    }
+  }
+}
+
+.window-small {
+  .contact-detail-item {
+  }
+}

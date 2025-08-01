@@ -1,0 +1,123 @@
+@import "src/assets/stylesheet/config";
+
+.topic-effect-action-cell {
+  .action-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 15rem;
+
+    .modify-button,
+    .delete-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .evaluation-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .sign-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .alreadyFull-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-text;
+      background: white;
+      border: 1px $color-text-title solid;
+      border-radius: $border-radius-button;
+    }
+
+    .deadline-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-text;
+      border-radius: $border-radius-button;
+    }
+
+    .request-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: #92D050;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .count-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: #EFB643;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .business-management-action-cell {
+
+  }
+}

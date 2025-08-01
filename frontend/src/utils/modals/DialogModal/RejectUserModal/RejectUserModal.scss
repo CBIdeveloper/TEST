@@ -1,0 +1,33 @@
+@import "src/assets/stylesheet/config";
+
+.reject-user-modal {
+  width: 45rem;
+  max-width: 100%;
+
+  .remark-container {
+
+  }
+
+  .button-group {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    margin: 0 1rem;
+
+    .cancel-button {
+      @include cancel-button;
+    }
+
+    .confirm-button {
+      @include white-button;
+    }
+  }
+}
+
+.window-small {
+  .reject-user-modal {
+
+  }
+}

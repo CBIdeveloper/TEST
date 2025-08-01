@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheet/config';
+
+.reminder-title-cell {
+  font-size: $font-size-description;
+  line-height: 2rem;
+  color: $color-blue;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.reminder-title-cell-nolink {
+  font-size: $font-size-description;
+  line-height: 2rem;
+  color: $color-black;
+  width: fit-content;
+  cursor: initial;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.window-small {
+  .reminder-title-cell {
+  }
+}

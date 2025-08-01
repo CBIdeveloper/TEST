@@ -1,0 +1,57 @@
+@import "src/assets/stylesheet/config";
+
+.mobilization-plan-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    .plan-input-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-gap: 0.8rem;
+      min-width: 0;
+      white-space: nowrap;
+      font-size: $font-size-description;
+
+      .plan-container {
+        .select-container {
+          padding: 0;
+
+          .form-input {
+            width: 14rem;
+          }
+        }
+      }
+
+      .classification-container {
+        .select-container {
+          padding: 0;
+
+          .form-input {
+            max-width: 14rem;
+          }
+        }
+      }
+
+      .type-container {
+        .select-container {
+          padding: 0;
+
+          .form-input {
+            max-width: 8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.window-small {
+}

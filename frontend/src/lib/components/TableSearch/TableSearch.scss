@@ -1,0 +1,110 @@
+@import 'src/assets/stylesheet/config';
+
+.table-search {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
+
+  .search-select-container {
+    .select-input {
+      width: 16rem;
+      padding-bottom: 0;
+
+      .input-title {
+        display: none;
+      }
+
+      .select-container {
+        .form-input {
+          color: white;
+          background-color: $color-main;
+          border-color: $color-main;
+          border-radius: 0.5rem 0 0 0.5rem;
+          padding: 0 3.5rem 0 1rem;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        .trailing-icon {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .text-input,
+  .text-select-input,
+  .date-input {
+    padding-bottom: 0;
+
+    .input-title {
+      margin: 0;
+    }
+
+    .input-container {
+      .form-input {
+        border: 1.5px solid $color-main;
+        margin-left: -0.2rem;
+        width: fit-content;
+      }
+
+      .message-section {
+        display: none;
+      }
+    }
+  }
+
+  .date-input {
+    width: 20rem;
+  }
+
+  .search-button {
+    @include no-select;
+    @include center-item;
+    @include feature-button;
+    margin: 0 0 0 -0.2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 4rem;
+  }
+}
+
+.window-small {
+  .table-search {
+    flex-wrap: wrap;
+    max-width: 30rem;
+
+    .select-input {
+      width: fit-content;
+      padding: 0;
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+
+      .select-container {
+        .form-input {
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    .text-input {
+      padding: 0;
+      flex: 1;
+
+      .input-container {
+        .form-input {
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .search-button {
+      margin: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import 'src/assets/stylesheet/config';
+
+.upload-data-action-cell {
+  .upload-data-action-cell2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .box {
+      position: relative;
+    }
+    .box:hover::before {
+      position: absolute;
+      background-color: $color-light-yellow;
+      z-index: 1;
+      content: '資料確認，確認後可供中央主管機關於傳輸系統接收資料';
+      top: -2rem;
+      left: -35rem;
+      margin-left: 3rem;
+    }
+    .upload-button {
+      @include center-item;
+      min-width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .text {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

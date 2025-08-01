@@ -1,0 +1,39 @@
+@import 'src/assets/stylesheet/config';
+
+.year-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    .react-datepicker__month-text {
+      padding: 0.5rem;
+    }
+
+    .form-input {
+      @include general-input;
+    }
+
+    .select-button {
+      @include general-button;
+      display: inline-block;
+      padding: 0 1rem;
+      margin-left: 1rem;
+      min-width: 4rem;
+      width: fit-content;
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}
+
+.window-small {
+  .year-input {
+  }
+}

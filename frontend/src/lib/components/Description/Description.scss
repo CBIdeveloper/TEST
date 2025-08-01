@@ -1,0 +1,32 @@
+@import 'src/assets/stylesheet/config';
+
+.description {
+  color: $color-text;
+
+  .title {
+    font-size: $font-size-title;
+    padding-bottom: $size-default-bottom-padding;
+    color: $color-main-sub;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-general;
+    padding-bottom: 2rem;
+
+    .sub-content {
+      font-size: $font-size-description;
+      color: $color-text-sub-content;
+      margin-left: 0.5rem;
+    }
+
+    &.no-data {
+      color: $color-text-disabled;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

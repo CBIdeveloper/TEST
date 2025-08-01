@@ -1,0 +1,100 @@
+@import 'src/assets/stylesheet/config';
+
+.date-time-input {
+  @include input-component;
+
+  &.button {
+    .react-datepicker {
+      position: absolute;
+      right: 0;
+      top: 4rem;
+      z-index: 1;
+      font-size: 1.2rem;
+    }
+  }
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    > div {
+      flex: 1;
+    }
+
+    .form-input {
+      @include general-input;
+    }
+
+    .select-button {
+      @include general-button;
+      display: inline-block;
+      padding: 0 1rem;
+      margin-left: 1rem;
+      min-width: 4rem;
+      width: fit-content;
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+
+  .react-datepicker {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+
+    .react-datepicker__month-container {
+      float: none;
+
+      .react-datepicker__current-month {
+        font-size: $font-size-general;
+      }
+
+      .react-datepicker__month {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .react-datepicker__day-names,
+      .react-datepicker__week {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: $font-size-description;
+      }
+
+      .react-datepicker__day {
+        padding: 0.5rem;
+      }
+    }
+
+    .react-datepicker__navigation--next {
+      left: 18.5rem;
+      right: auto;
+    }
+
+    .react-datepicker__time-container {
+      height: 100%;
+
+      .react-datepicker__header {
+        @include center-item;
+        height: 6.1rem;
+        box-sizing: border-box;
+      }
+
+      .react-datepicker__time-list-item {
+        @include center-item;
+      }
+    }
+  }
+}
+
+.window-small {
+  .date-time-input {
+  }
+}

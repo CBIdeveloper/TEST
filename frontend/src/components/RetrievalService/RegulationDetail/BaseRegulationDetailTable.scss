@@ -1,0 +1,16 @@
+@import "src/assets/stylesheet/config";
+
+.base-regulation-detail-table {
+  display: flex;
+  flex-direction: column;
+
+  .text-input {
+    flex: 1;
+  }
+}
+
+.window-small {
+  .base-regulation-detail-table {
+
+  }
+}

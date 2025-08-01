@@ -1,0 +1,12 @@
+@import 'src/assets/stylesheet/config';
+
+.table-count {
+  font-size: $font-size-description;
+  line-height: 1.9rem;
+  color: $color-black;
+  padding: 1.5rem 1.2rem;
+}
+.window-small {
+  .table-count {
+  }
+}

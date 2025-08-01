@@ -1,0 +1,33 @@
+@import 'src/assets/stylesheet/config';
+
+.feature-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 3rem;
+  height: fit-content;
+  z-index: 1;
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 14rem);
+    grid-gap: 3rem;
+
+    .red {
+      background: $color-linear-red;
+    }
+
+    .blue {
+      background: $color-linear-blue;
+    }
+
+    .yellow {
+      background: $color-linear-yellow;
+    }
+  }
+}
+
+.window-small {
+  .feature-panel {
+  }
+}

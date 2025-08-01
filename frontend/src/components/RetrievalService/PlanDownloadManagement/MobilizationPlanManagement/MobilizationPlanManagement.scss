@@ -1,0 +1,33 @@
+@import "src/assets/stylesheet/config";
+
+.mobilization-plan-management {
+  .search-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    row-gap: 1.2rem;
+    column-gap: 3.2rem;
+    min-width: 0;
+  }
+
+  .text-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    flex: 1;
+  }
+
+  .date-containers {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+}
+
+.window-small {
+  .mobilization-plan-management {
+
+  }
+}

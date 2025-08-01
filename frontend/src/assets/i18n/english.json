@@ -1,0 +1,9 @@
+{
+  "name": "english",
+  "abbreviation": "EN",
+  "app": {
+    "project": "Project"
+  },
+  "header": { "project": "Project" },
+  "footer": { "project": "Project" }
+}

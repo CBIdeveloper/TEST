@@ -1,0 +1,73 @@
+@import 'src/assets/stylesheet/config';
+
+.unit-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    .unit-input-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-gap: 0.8rem;
+      min-width: 0;
+      white-space: nowrap;
+      font-size: $font-size-description;
+
+      .level-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-gap: 0.8rem;
+      }
+
+      .first-level {
+        @extend .level-container;
+
+        .select-container {
+          padding: 0;
+
+          .form-input {
+            width: 13rem;
+          }
+        }
+      }
+
+      .second-level {
+        @extend .level-container;
+
+        .select-container {
+          padding: 0;
+
+          .form-input {
+            width: 18rem;
+          }
+        }
+      }
+
+      .third-level {
+        @extend .level-container;
+
+        .input-container {
+          padding: 0;
+
+          .form-input {
+            max-width: 18rem;
+            width: 18rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.window-small {
+  .unit-input {
+  }
+}

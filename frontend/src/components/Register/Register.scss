@@ -1,0 +1,199 @@
+@import 'src/assets/stylesheet/config';
+
+.register {
+  .section-title {
+    margin: 1.5rem 0 3rem;
+  }
+
+  .register-container {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 4.4rem 0;
+    box-sizing: border-box;
+    min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+
+    .container {
+      max-width: 147.5rem;
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .password-toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+
+    .checkbox {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+  }
+
+  .is-plan-sponsor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+
+    .select-container {
+      padding: 0;
+    }
+  }
+
+  .mobilization-plan-card {
+    .mobilization-plan-input-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      .add-button {
+        cursor: pointer;
+        color: $color-blue;
+      }
+
+      .delete-button {
+        cursor: pointer;
+        color: $color-red;
+      }
+    }
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1.65rem 0;
+
+    .reset-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-black;
+      background: $color-linear-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .submit-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+  .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+  }
+  .checkbox-container-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-weight: bold;
+  }
+  .checkbox-item {
+    flex: 1;
+    font-size: 1.4rem;
+    background: #eaeaea;
+    border-right: 2px solid white;
+  }
+  .checkbox-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    background: #fff5d9;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    gap: 0.5rem;
+  }
+  .checkbox-section-first {
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    background: white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid #eaeaea;
+    gap: 0.5rem;
+  }
+  .checkbox-section-two {
+    flex: 4.5;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    background: white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid #eaeaea;
+    gap: 0.5rem;
+  }
+  .checkbox-section-end {
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    background: white;
+    border-right: 2px solid white;
+  }
+  .checkbox-section-end-two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    background: #fff5d9;
+    border-right: 2px solid white;
+  }
+  .checkbox-item-title {
+    flex: 1;
+    font-size: 1.6rem;
+    color: #eaeaea;
+    background: #4280d8;
+    border-right: 2px solid white;
+    text-align: center;
+  }
+  .checkbox-section-title {
+    flex: 4.5;
+    // display: flex;
+    display: inline-block;
+    flex-direction: column;
+    color: white;
+    font-size: 1.6rem;
+    background: #4280d8;
+    border-right: 2px solid white;
+    text-align: center;
+  }
+}
+
+.window-small {
+  .register {
+  }
+}

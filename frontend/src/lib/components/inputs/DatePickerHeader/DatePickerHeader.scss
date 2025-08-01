@@ -1,0 +1,82 @@
+@import 'src/assets/stylesheet/config';
+
+.date-picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.6rem;
+
+  .date-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .previous-year-button,
+  .next-year-button,
+  .previous-month-button,
+  .next-month-button {
+    @include outline-none;
+    cursor: pointer;
+
+    //&:hover {
+    //  color: $color-main-sub-hover;
+    //}
+
+    &.disabled {
+      @include disabled;
+    }
+  }
+
+  .year-selector {
+    .select-input {
+      width: 9rem !important;
+
+      .select-container {
+        width: 9rem !important;
+        padding: 0;
+
+        .form-input {
+          width: 9rem !important;
+          min-width: 0;
+          border: 1.5px solid $color-input-border !important;
+          border-radius: 0.5rem !important;
+        }
+      }
+    }
+  }
+
+  .month-selector {
+    .select-input {
+      width: 6rem !important;
+
+      .select-container {
+        width: 6rem !important;
+        padding: 0;
+
+        .form-input {
+          width: 6rem !important;
+          min-width: 0;
+          border: 1.5px solid $color-input-border !important;
+          border-radius: 0.5rem !important;
+        }
+      }
+    }
+  }
+
+  .select-input {
+    padding: 0;
+
+    .input-title,
+    .error-message {
+      display: none;
+    }
+
+    .trailing-icon {
+      right: 0.5rem;
+    }
+  }
+}
+
+.window-small {
+}

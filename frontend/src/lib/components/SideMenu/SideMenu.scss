@@ -1,0 +1,79 @@
+@import "src/assets/stylesheet/config";
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 31.5rem;
+
+  .menu-title {
+    @include center-item;
+    height: 10rem;
+    font-size: $font-size-title;
+    font-weight: $font-weight-bold;
+    line-height: 2.9rem;
+    color: white;
+    background: $color-linear-dark-blue;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .sub-menu-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem 0 0 1.5rem;
+    background: $color-linear-blue;
+
+    .sub-menu-item {
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      font-size: $font-size-white-text;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      text-decoration: none;
+      box-sizing: border-box;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+      padding-left: 2.5rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-blue;
+        background-color: white;
+        border-radius: 4rem 0 0 4rem;
+      }
+
+      &.active {
+        color: $color-blue;
+        background-color: white;
+        border-radius: 4rem 0 0 4rem;
+      }
+    }
+  }
+
+  &.yellow {
+    .menu-title {
+      background: $color-linear-dark-yellow;
+    }
+
+    .sub-menu-list {
+      background: $color-linear-yellow;
+    }
+  }
+
+  &.red {
+    .menu-title {
+      background: $color-linear-dark-red;
+    }
+
+    .sub-menu-list {
+      background: $color-linear-red;
+    }
+  }
+}
+
+.window-small {
+  .side-menu {
+
+  }
+}

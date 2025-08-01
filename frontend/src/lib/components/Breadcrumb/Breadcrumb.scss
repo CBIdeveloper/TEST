@@ -1,0 +1,43 @@
+@import 'src/assets/stylesheet/config';
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  .page-name {
+    font-size: $font-size-general;
+    line-height: 2rem;
+    color: $color-black;
+    text-decoration: none;
+    display: inline-block;
+
+    &.disable {
+      pointer-events: none;
+      touch-action: none;
+      cursor: pointer;
+    }
+
+    &.active {
+      color: #f4865e;
+    }
+  }
+
+  .prefix-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .arrow {
+      display: inline-block;
+      padding-right: 0.5rem;
+      margin: auto 0;
+    }
+  }
+}
+
+.window-small {
+  .breadcrumb {
+  }
+}

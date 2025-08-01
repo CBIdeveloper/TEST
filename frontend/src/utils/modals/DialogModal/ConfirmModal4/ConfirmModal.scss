@@ -1,0 +1,48 @@
+@import 'src/assets/stylesheet/config';
+
+.confirm-modal4 {
+  width: 20rem;
+  .message2 {
+    font-size: $font-size-general;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .button-group {
+    display: flex;
+    @include center-item;
+    gap: 1rem;
+    .cancel-button2 {
+      @include center-item;
+      width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .confirm-button2 {
+      @include center-item;
+      min-width: 4rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}

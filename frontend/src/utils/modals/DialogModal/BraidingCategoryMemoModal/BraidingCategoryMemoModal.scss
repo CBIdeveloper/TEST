@@ -1,0 +1,110 @@
+@import 'src/assets/stylesheet/config';
+
+.braiding-category-memo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 105rem;
+
+  .memo-section-container {
+    display: flex;
+    flex-direction: column;
+
+    .memo-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .memo-content {
+        @include center-item;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: $font-weight-bold;
+        color: $color-black;
+
+        .category-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: $font-size-white-text;
+          line-height: 2rem;
+          font-weight: $font-weight-normal;
+          padding-bottom: 1rem;
+          text-align: center;
+        }
+
+        .data-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .recent-data {
+            display: flex;
+            flex-direction: row;
+            font-size: $font-size-white-text;
+            line-height: 2rem;
+            padding: 0.35rem 0;
+            gap: 0.5rem;
+
+            .recent-data-type {
+              color: $color-blue;
+            }
+          }
+
+          .data-count {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+          }
+
+          .data-date {
+            font-size: $font-size-white-text;
+            line-height: 2rem;
+            padding: 0.35rem 0;
+          }
+        }
+
+        .memo-status {
+          font-size: $font-size-white-text;
+          line-height: 2rem;
+          color: $color-blue;
+          padding: 0.35rem 0;
+
+          &.error {
+            color: $color-red;
+          }
+        }
+      }
+    }
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-bottom: 2.2rem;
+
+    .close-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .braiding-category-memo-modal {
+  }
+}

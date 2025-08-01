@@ -1,0 +1,77 @@
+@import 'src/assets/stylesheet/config';
+
+.file-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+    flex-direction: column;
+
+    .file-input-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 1rem;
+      font-size: $font-size-note;
+      text-align: center;
+
+      .upload-file-button {
+        @include center-item;
+        width: 8rem;
+        height: 2rem;
+        font-size: $font-size-note;
+        line-height: 1.6rem;
+        background: $color-linear-grey;
+        border: 1px solid $color-stroke;
+        border-radius: 0.5rem;
+
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+
+      .file-input {
+        display: none;
+      }
+
+      .file-name {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        flex-wrap: wrap;
+
+        .file {
+          display: flex;
+          grid-gap: 1rem;
+          align-items: center;
+          word-break: break-all;
+          flex: 1;
+          text-align: left;
+
+          .delete-container {
+            @include center-item;
+            @include outline-none;
+            cursor: pointer;
+
+            .delete-icon {
+              color: $color-danger;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}
+
+.window-small {
+  .file-input {
+  }
+}

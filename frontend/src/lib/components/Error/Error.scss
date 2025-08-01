@@ -1,0 +1,10 @@
+@import 'src/assets/stylesheet/config';
+
+.error-component {
+  @include center-item;
+  font-size: $font-size-description;
+  font-weight: $font-weight-normal;
+  line-height: 2rem;
+  color: $color-danger;
+  padding: 3.3rem 0 0.7rem;
+}

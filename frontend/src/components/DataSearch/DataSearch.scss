@@ -1,0 +1,96 @@
+@import 'src/assets/stylesheet/config';
+
+.data-search {
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+  box-sizing: border-box;
+  padding: 4rem 4.4rem 0;
+  flex: 1;
+
+  .mobilization-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid $color-stroke;
+    border-radius: $border-radius-default;
+    background: $color-linear-grey;
+    box-sizing: border-box;
+    padding: 0 3.5rem;
+    gap: 1rem;
+
+    .input-title {
+      border: none;
+      min-width: 0;
+      margin-left: auto;
+    }
+
+    .form-input {
+      min-width: 0 !important;
+      margin-left: auto;
+    }
+
+    .approve-button {
+      @include center-item;
+      min-width: 9rem;
+      height: 3rem;
+      font-size: $font-size-white-text;
+      font-weight: $font-weight-bold;
+      border-radius: $border-radius-button;
+      color: white;
+      background: $color-linear-blue-grey;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  .approve-button-container{
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+  }
+
+  .multi-table-search {
+    margin: 0;
+  }
+
+  .search-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.2rem;
+    column-gap: 3.2rem;
+    min-width: 0;
+  }
+
+  .text-containers,
+  .date-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .evaluation-button {
+    @include center-item;
+    width: 10rem;
+    height: 3rem;
+    font-size: $font-size-description;
+    font-weight: $font-weight-bold;
+    line-height: 2rem;
+    color: white;
+    background: $color-linear-blue-grey;
+    border-radius: $border-radius-button;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+.window-small {
+  .data-search {
+  }
+}

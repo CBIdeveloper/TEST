@@ -1,0 +1,163 @@
+@import 'src/assets/stylesheet/config';
+
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: calc(100vh - #{$size-footer-height});
+
+  .background-image {
+    position: absolute;
+    min-height: calc(100vh - #{$size-footer-height});
+    object-fit: cover;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 50rem;
+  }
+
+  .login-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $border-radius-default;
+    margin-top: 10rem;
+    z-index: 10;
+
+    .logo {
+      width: 51.7rem;
+      padding-bottom: 3.1rem;
+    }
+
+    .dialog-body {
+      @include center-item;
+      flex-direction: column;
+      padding: 1.7rem 4.8rem 2.6rem;
+      border-radius: $border-radius-default;
+      background-color: white;
+      width: 60.8rem;
+      box-sizing: border-box;
+      box-shadow: $box-shadow-default;
+
+      .login-title {
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
+        line-height: 3.5rem;
+        color: $color-black;
+        margin-bottom: 2.2rem;
+      }
+
+      .inputs {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .navigation-button {
+        font-size: $font-size-button;
+        font-weight: $font-weight-button;
+        text-decoration: none;
+        color: $color-blue;
+        line-height: 2.179rem;
+        padding: 0.8rem 0;
+      }
+
+      .api-error {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .login-register-description {
+        border: 1.7px solid $color-feature;
+        border-radius: $border-radius-default;
+        border-color: rgb(255, 217, 0, 0.5);
+        padding: 1rem;
+        background-color: rgba(225, 225, 200, 0.2);
+
+        .login-dash {
+          border-bottom: dashed;
+          margin-bottom: 1rem;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+
+        .login-register-button {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      .login-contact {
+        width: 100%;
+        margin-top: 10px;
+
+        .login-contact-title {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+
+        .login-contact-title-text {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .login-contact-body {
+          font-size: 14px;
+          margin-top: 1rem;
+          .login-contact-officeHours-label,
+          .login-contact-accountRegister-label,
+          .login-contact-system-label,
+          .login-contact-mobilizationPlan-label {
+            font-weight: bold;
+            margin-right: 10px;
+          }
+
+          .login-contact-accountRegister,
+          .login-contact-system,
+          .login-contact-mobilizationPlan {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .left {
+          width: 70%;
+          float: left;
+        }
+        .qr-code {
+          width: 30%;
+          float: left;
+          margin-left: 80%;
+          margin-top: -14%;
+        }
+        .qr-code img {
+          max-width: 60%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.window-small {
+  .login {
+    .login-dialog {
+      .logo {
+        max-width: 90vw;
+        width: 36rem;
+      }
+
+      .dialog-body {
+        padding: 1.7rem 1rem 1.6rem;
+        min-width: 32rem;
+        max-width: 95vw;
+
+        .inputs {
+          padding: 0 2.5rem;
+        }
+      }
+    }
+  }
+}

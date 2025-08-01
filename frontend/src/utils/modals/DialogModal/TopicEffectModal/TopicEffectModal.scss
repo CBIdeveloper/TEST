@@ -1,0 +1,167 @@
+@import 'src/assets/stylesheet/config';
+
+.topic-effect-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90rem;
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    border-top: 1px solid $color-stroke;
+
+    .input-title {
+      border-left: none;
+    }
+
+    .link-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .file-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      .file-link {
+        color: $color-blue;
+      }
+
+      .delete-button {
+        cursor: pointer;
+        color: $color-red;
+      }
+    }
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-bottom: 2.2rem;
+
+    .upload-button,
+    .close-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .normal-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-black;
+      background: $color-linear-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .submit-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  .visible-unit-card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .visible-unit-input-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+
+      .add-button {
+        cursor: pointer;
+        color: $color-blue;
+      }
+
+      .hidden-button {
+        cursor: pointer;
+        color: $color-light-blue;
+      }
+
+      .delete-button {
+        cursor: pointer;
+        color: $color-red;
+      }
+    }
+  }
+
+  .multiple-select-input {
+    .input-title {
+      min-width: 9rem !important;
+    }
+
+    .option-section {
+      padding: 1.2rem .8rem !important;
+
+      .trailing-icon {
+        .select-input .select-container .form-input {
+          max-width: 6.5rem !important;
+          min-width: 6.5rem !important;
+        }
+
+        .text-input .input-container .form-input {
+          max-width: 10rem !important;
+        }
+      }
+    }
+  }
+
+  .approve-button {
+    @include center-item;
+    min-width: 14rem;
+
+    height: 3rem;
+    font-size: $font-size-white-text;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-button;
+    color: white;
+    background: $color-linear-blue-grey;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+.width-auto {
+  width: auto;
+}
+
+.window-small {}

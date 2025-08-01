@@ -1,0 +1,163 @@
+@import 'src/assets/stylesheet/config';
+
+.text-select-input {
+  @include input-component;
+
+  &.zen {
+    padding: 0;
+
+    .input-title,
+    .error-message {
+      display: none;
+    }
+  }
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    .input-text-section {
+      position: relative;
+      display: flex;
+    }
+
+    .form-input {
+      @include general-input;
+
+      &.with-icon {
+        padding: 0 3.5rem 0 1.2rem;
+      }
+
+      &.disable {
+        background: $color-input-disable;
+      }
+    }
+
+    .trailing-icon {
+      @include input-trailing-icon;
+    }
+
+    .options {
+      @include no-select;
+      position: absolute;
+      top: 5rem;
+      width: 100%;
+      height: fit-content;
+      max-height: 16rem;
+      box-sizing: border-box;
+      background-color: white;
+      padding: 0 1rem;
+      border: 1.5px solid $color-input-border;
+      box-shadow: $box-shadow-options;
+      z-index: 10;
+      overflow: auto;
+
+      &.bottom {
+        top: auto;
+        bottom: 4.5rem;
+      }
+
+      .option {
+        @include outline-none;
+        font-size: $font-size-description;
+        font-weight: $font-weight-normal;
+        padding: 1rem 0.3rem;
+        color: $color-text;
+        cursor: pointer;
+        white-space: break-spaces;
+        text-align: left;
+
+        &.disable {
+          @include disabled;
+        }
+
+        &.warning {
+          @include disabled;
+          color: $color-danger;
+        }
+
+        &.no-option {
+          @include disabled;
+        }
+
+        &.selected {
+          color: $color-feature;
+        }
+
+        &.multi-selected {
+          @include disabled;
+          color: $color-feature;
+        }
+      }
+    }
+  }
+
+  .selected-values {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+
+    .value-button {
+      @include normal-button;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .icon {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}
+
+.window-small {
+  .input-title {
+    @include input-title-mobile;
+  }
+
+  .input-container {
+    @include input-container-mobile;
+
+    .options {
+      width: 100%;
+    }
+  }
+}
+
+
+.desktop {
+  .text-select-input {
+    .input-container {
+      .options {
+        .option {
+          &:hover {
+            color: $color-feature;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .text-select-input {
+    .input-container {
+      .options {
+        .option {
+          &:active {
+            color: $color-feature;
+          }
+        }
+      }
+    }
+  }
+}

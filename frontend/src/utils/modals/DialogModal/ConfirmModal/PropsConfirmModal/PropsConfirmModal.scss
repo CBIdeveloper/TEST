@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheet/config';
+
+.confirm-modal {
+  width: 35rem;
+  max-width: 100%;
+
+  .message {
+    font-size: $font-size-general;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .button-group {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    margin: 0 1rem;
+
+    .cancel-button {
+      @include cancel-button;
+    }
+
+    .confirm-button {
+      @include white-button;
+    }
+  }
+}

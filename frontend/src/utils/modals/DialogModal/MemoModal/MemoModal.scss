@@ -1,0 +1,16 @@
+@import 'src/assets/stylesheet/config';
+
+.memo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  min-width: 24rem;
+  padding: 2rem 0;
+
+  .modal-button {
+    @include general-button;
+  }
+}
+
+.window-small {
+}

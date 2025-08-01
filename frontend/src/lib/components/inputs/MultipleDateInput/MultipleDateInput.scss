@@ -1,0 +1,94 @@
+@import 'src/assets/stylesheet/config';
+
+.multiple-date-input {
+  @include input-component;
+
+  .input-title {
+    @include input-title;
+  }
+
+  .input-container {
+    @include input-container;
+
+    .form-input {
+      @include general-input;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    .react-datepicker {
+      width: 25rem;
+      height: fit-content;
+
+      .react-datepicker__month-container {
+        float: none;
+
+        .react-datepicker__current-month {
+          font-size: $font-size-general;
+        }
+
+        .react-datepicker__month {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .react-datepicker__day-names,
+        .react-datepicker__week {
+          display: flex;
+          justify-content: space-evenly;
+          font-size: $font-size-description;
+        }
+
+        .react-datepicker__day {
+          padding: 0.3rem;
+        }
+
+        .react-datepicker__day-names {
+        }
+
+        .react-datepicker__day--highlighted,
+        .react-datepicker__month-text--highlighted,
+        .react-datepicker__quarter-text--highlighted,
+        .react-datepicker__year-text--highlighted {
+          background-color: #2579ba !important;
+          color: white !important;
+        }
+
+        .react-datepicker__day--keyboard-selected,
+        .react-datepicker__month-text--keyboard-selected,
+        .react-datepicker__quarter-text--keyboard-selected,
+        .react-datepicker__year-text--keyboard-selected {
+          background: white;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .selected-dates {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+
+    .date-button {
+      @include normal-button;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .icon {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}

@@ -1,0 +1,33 @@
+@import 'src/assets/stylesheet/config';
+
+.contact-detail-tab-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+
+  .filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem 0;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+  }
+
+  .contact-item-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.window-small {
+  .contact-detail-tab-page {
+  }
+}

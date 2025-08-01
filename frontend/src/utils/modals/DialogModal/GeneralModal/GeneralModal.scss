@@ -1,0 +1,23 @@
+@import "src/assets/stylesheet/config";
+
+.general-modal {
+  width: 35rem;
+  max-width: 100%;
+
+  .message {
+    font-size: $font-size-general;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+
+    .confirm-button {
+      @include general-button;
+    }
+  }
+}

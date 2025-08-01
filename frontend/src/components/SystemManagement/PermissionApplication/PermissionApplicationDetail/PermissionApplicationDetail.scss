@@ -1,0 +1,109 @@
+@import "src/assets/stylesheet/config";
+
+.permission-application-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .is-plan-sponsor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+
+    .select-container {
+      padding: 0;
+    }
+  }
+
+  .file-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    .file-link {
+      color: $color-blue;
+    }
+  }
+
+  .access-button {
+    @include center-item;
+    width: 10rem;
+    height: 3rem;
+    font-size: $font-size-description;
+    font-weight: $font-weight-bold;
+    line-height: 2rem;
+    color: white;
+    background: $color-linear-blue-grey;
+    border-radius: $border-radius-button;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-top: 1.5rem;
+
+    .normal-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-black;
+      background: $color-linear-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .submit-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  .date-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .use-date-container {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+.window-small {
+  .approve-user-detail {
+
+  }
+}

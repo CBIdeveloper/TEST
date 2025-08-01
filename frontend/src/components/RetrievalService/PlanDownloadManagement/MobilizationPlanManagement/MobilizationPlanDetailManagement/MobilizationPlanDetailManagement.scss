@@ -1,0 +1,43 @@
+@import 'src/assets/stylesheet/config';
+
+.mobilization-plan-detail-management {
+  .add-button {
+    @include center-item;
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    font-size: $font-size-white-text;
+    font-weight: $font-weight-bold;
+    line-height: 2rem;
+    background-color: $color-blue;
+    border-radius: $border-radius-button;
+    text-decoration: none;
+    margin-right: 4rem;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+
+  .normal-button {
+    @include center-item;
+    width: 10rem;
+    height: 3rem;
+    font-size: $font-size-description;
+    font-weight: $font-weight-bold;
+    line-height: 2rem;
+    color: $color-black;
+    background: $color-linear-grey;
+    border-radius: $border-radius-button;
+    margin: 2rem auto;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+}
+
+.window-small {
+  .mobilization-plan-detail-management {
+  }
+}

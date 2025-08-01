@@ -1,0 +1,22 @@
+@import 'src/assets/stylesheet/config';
+
+.report-search {
+  min-height: 70rem;
+
+  .report-search-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+
+    .report-iframe {
+      flex: 1;
+      border: none;
+    }
+  }
+}
+
+.window-small {
+  .report-search {
+  }
+}

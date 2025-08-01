@@ -1,0 +1,31 @@
+@import "src/assets/stylesheet/config";
+
+.mobilization-plan-management-system {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .add-button {
+    @include center-item;
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    font-size: $font-size-white-text;
+    font-weight: $font-weight-bold;
+    line-height: 2rem;
+    background-color: $color-blue;
+    border-radius: $border-radius-button;
+    text-decoration: none;
+    margin-right: 4rem;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+.window-small {
+  .mobilization-plan-management-system {
+
+  }
+}

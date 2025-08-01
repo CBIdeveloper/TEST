@@ -1,0 +1,39 @@
+@import "src/assets/stylesheet/config";
+
+.batch-approval-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 120rem;
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-bottom: 2.2rem;
+
+    .approve-button,
+    .close-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .batch-approval-modal {
+
+  }
+}

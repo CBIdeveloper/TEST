@@ -1,0 +1,46 @@
+@import "src/assets/stylesheet/config";
+
+.access-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 105rem;
+
+  .access-control-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    margin-top: 1.2rem;
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-bottom: 2.2rem;
+
+    .close-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .access-modal {
+
+  }
+}

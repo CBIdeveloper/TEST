@@ -1,0 +1,319 @@
+@import 'src/assets/stylesheet/config';
+
+.tab-item {
+  @include center-item;
+  @include outline-none;
+  @include no-select;
+  font-size: $font-size-white-text;
+  line-height: 2rem;
+  color: $color-stroke;
+  min-width: 10rem;
+  font-weight: $font-weight-bold;
+  border-bottom: 1px solid $color-stroke;
+  padding: 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &.red {
+    &.select {
+      color: $color-plan-red;
+      border-bottom-color: $color-plan-red;
+    }
+  }
+
+  &.orange {
+    &.select {
+      color: $color-plan-orange;
+      border-bottom-color: $color-plan-orange;
+    }
+  }
+
+  &.color-contact-1 {
+    &.select {
+      color: $color-contact-1;
+      border-bottom-color: $color-contact-1;
+    }
+  }
+
+  &.color-contact-2 {
+    &.select {
+      color: $color-contact-2;
+      border-bottom-color: $color-contact-2;
+    }
+  }
+
+  &.color-contact-3 {
+    &.select {
+      color: $color-contact-3;
+      border-bottom-color: $color-contact-3;
+    }
+  }
+
+  &.color-contact-4 {
+    &.select {
+      color: $color-contact-4;
+      border-bottom-color: $color-contact-4;
+    }
+  }
+
+  &.color-contact-5 {
+    &.select {
+      color: $color-contact-5;
+      border-bottom-color: $color-contact-5;
+    }
+  }
+
+  &.color-contact-6 {
+    &.select {
+      color: $color-contact-6;
+      border-bottom-color: $color-contact-6;
+    }
+  }
+
+  &.color-contact-7 {
+    &.select {
+      color: $color-contact-7;
+      border-bottom-color: $color-contact-7;
+    }
+  }
+
+  &.color-contact-8 {
+    &.select {
+      color: $color-contact-8;
+      border-bottom-color: $color-contact-8;
+    }
+  }
+
+  &.color-contact-9 {
+    &.select {
+      color: $color-contact-9;
+      border-bottom-color: $color-contact-9;
+    }
+  }
+
+  &.color-contact-10 {
+    &.select {
+      color: $color-contact-10;
+      border-bottom-color: $color-contact-10;
+    }
+  }
+
+  &.color-contact-11 {
+    &.select {
+      color: $color-black;
+      border-bottom-color: $color-black;
+    }
+  }
+
+  &.color-contact-12 {
+    &.select {
+      color: $color-contact-10;
+      border-bottom-color: $color-contact-12;
+    }
+  }
+}
+
+.desktop {
+  .tab-item {
+    &.red {
+      &:hover {
+        color: $color-red;
+        border-bottom-color: $color-red;
+      }
+    }
+
+    &.orange {
+      &:hover {
+        color: $color-plan-orange;
+        border-bottom-color: $color-plan-orange;
+      }
+    }
+
+    &.color-contact-1 {
+      &:hover {
+        color: $color-contact-1;
+        border-bottom-color: $color-contact-1;
+      }
+    }
+
+    &.color-contact-2 {
+      &:hover {
+        color: $color-contact-2;
+        border-bottom-color: $color-contact-2;
+      }
+    }
+
+    &.color-contact-3 {
+      &:hover {
+        color: $color-contact-3;
+        border-bottom-color: $color-contact-3;
+      }
+    }
+
+    &.color-contact-4 {
+      &:hover {
+        color: $color-contact-4;
+        border-bottom-color: $color-contact-4;
+      }
+    }
+
+    &.color-contact-5 {
+      &:hover {
+        color: $color-contact-5;
+        border-bottom-color: $color-contact-5;
+      }
+    }
+
+    &.color-contact-6 {
+      &:hover {
+        color: $color-contact-6;
+        border-bottom-color: $color-contact-6;
+      }
+    }
+
+    &.color-contact-7 {
+      &:hover {
+        color: $color-contact-7;
+        border-bottom-color: $color-contact-7;
+      }
+    }
+
+    &.color-contact-8 {
+      &:hover {
+        color: $color-contact-8;
+        border-bottom-color: $color-contact-8;
+      }
+    }
+
+    &.color-contact-9 {
+      &:hover {
+        color: $color-contact-9;
+        border-bottom-color: $color-contact-9;
+      }
+    }
+
+    &.color-contact-10 {
+      &:hover {
+        color: $color-contact-10;
+        border-bottom-color: $color-contact-10;
+      }
+    }
+
+    &.color-contact-11 {
+      &:hover {
+        color: $color-black;
+        border-bottom-color: $color-black;
+      }
+    }
+
+    &.color-contact-12 {
+      &:hover {
+        color: $color-contact-10;
+        border-bottom-color: $color-contact-12;
+      }
+    }
+  }
+}
+
+.mobile {
+  .tab-item {
+    &.red {
+      &:active {
+        color: $color-red;
+        border-bottom-color: $color-red;
+      }
+    }
+
+    &.orange {
+      &:active {
+        color: $color-plan-orange;
+        border-bottom-color: $color-plan-orange;
+      }
+    }
+
+    &.color-contact-1 {
+      &:active {
+        color: $color-contact-1;
+        border-bottom-color: $color-contact-1;
+      }
+    }
+
+    &.color-contact-2 {
+      &:active {
+        color: $color-contact-2;
+        border-bottom-color: $color-contact-2;
+      }
+    }
+
+    &.color-contact-3 {
+      &:active {
+        color: $color-contact-3;
+        border-bottom-color: $color-contact-3;
+      }
+    }
+
+    &.color-contact-4 {
+      &:active {
+        color: $color-contact-4;
+        border-bottom-color: $color-contact-4;
+      }
+    }
+
+    &.color-contact-5 {
+      &:active {
+        color: $color-contact-5;
+        border-bottom-color: $color-contact-5;
+      }
+    }
+
+    &.color-contact-6 {
+      &:active {
+        color: $color-contact-6;
+        border-bottom-color: $color-contact-6;
+      }
+    }
+
+    &.color-contact-7 {
+      &:active {
+        color: $color-contact-7;
+        border-bottom-color: $color-contact-7;
+      }
+    }
+
+    &.color-contact-8 {
+      &:active {
+        color: $color-contact-8;
+        border-bottom-color: $color-contact-8;
+      }
+    }
+
+    &.color-contact-9 {
+      &:active {
+        color: $color-contact-9;
+        border-bottom-color: $color-contact-9;
+      }
+    }
+
+    &.color-contact-10 {
+      &:active {
+        color: $color-contact-10;
+        border-bottom-color: $color-contact-10;
+      }
+    }
+
+    &.color-contact-11 {
+      &:active {
+        color: $color-black;
+        border-bottom-color: $color-black;
+      }
+    }
+
+    &.color-contact-12 {
+      &:active {
+        color: $color-contact-12;
+        border-bottom-color: $color-contact-12;
+      }
+    }
+  }
+}

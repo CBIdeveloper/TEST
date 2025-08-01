@@ -1,0 +1,14 @@
+@import 'src/assets/stylesheet/config';
+
+.select-button-container {
+  @include center-item;
+  @include outline-none;
+  cursor: pointer;
+  padding: 0 1rem;
+
+  .icon {
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+    filter: brightness(90%);
+  }
+}

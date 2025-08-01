@@ -1,0 +1,112 @@
+@import 'src/assets/stylesheet/config';
+@import '~react-datepicker/dist/react-datepicker.css';
+
+.react-datepicker__input-container {
+  display: flex;
+}
+
+.react-datepicker__tab-loop {
+  flex: 0 !important;
+}
+
+.react-datepicker {
+  z-index: 0;
+  font-size: 1.2rem;
+
+  .react-datepicker__triangle {
+    left: 20px !important;
+    transform: none !important;
+  }
+
+  .react-datepicker__header {
+    padding: 1rem 0;
+
+    .react-datepicker__current-month {
+      font-size: 1.2rem;
+    }
+
+    .react-datepicker__day-names {
+      padding-top: 0.8rem;
+    }
+  }
+
+  .react-datepicker__month {
+    .react-datepicker__day {
+      @include outline-none;
+    }
+  }
+
+  .react-datepicker__time-container {
+    width: 12rem;
+
+    .react-datepicker__time-box {
+      width: 100%;
+    }
+
+    .react-datepicker-time__header {
+      font-size: $font-size-general;
+    }
+
+    .react-datepicker__time-list-item {
+      font-size: $font-size-general;
+    }
+  }
+
+  .react-datepicker-year-header {
+    font-size: $font-size-general;
+  }
+
+  .react-datepicker__year {
+    font-size: $font-size-description;
+
+    .react-datepicker__year-wrapper {
+      justify-content: center;
+      max-width: 28rem;
+
+      .react-datepicker__year-text {
+        margin: 1rem 0.5rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+// Enlarge react date picker
+.react-datepicker {
+  width: 28rem;
+  height: fit-content;
+
+  &.react-datepicker--time-only {
+    width: 12rem;
+  }
+
+  .react-datepicker__month-container {
+    float: none;
+
+    .react-datepicker__current-month {
+      font-size: $font-size-general;
+    }
+
+    .react-datepicker__month {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .react-datepicker__day-names,
+    .react-datepicker__week {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: $font-size-description;
+    }
+
+    .react-datepicker__day {
+      padding: 0.3rem;
+    }
+  }
+}
+
+.react-datepicker-popper {
+  z-index: 10;
+}

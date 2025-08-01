@@ -1,0 +1,100 @@
+@import 'src/assets/stylesheet/config';
+.not-correct-modal {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  .not-correct-modal-title {
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .not-correct-modal-name {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .not-correct-modal-transat {
+    margin-left: 35rem;
+  }
+}
+.Not-correct-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2.1rem;
+  // width: 80rem;
+  min-width: auto;
+  .reason-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    .reason {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      font-size: 1.6rem;
+    }
+    .bar {
+      --width-percentage: 0%;
+      width: var(--width-percentage);
+      height: 20px;
+      background: #f8cbad;
+      margin-right: 10px;
+    }
+  }
+  .under {
+    margin-left: auto;
+    font-size: 1.6rem;
+    color: black;
+  }
+  .underline {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -1rem;
+    background: #3d87e3;
+    // width: 100%;
+    .button-group {
+      display: flex;
+      align-items: center;
+      grid-gap: 1rem;
+      margin-left: auto;
+      .confirm-button {
+        @include center-item;
+        min-width: 5rem;
+        height: 2rem;
+        padding: 0 1rem;
+        margin-right: 2rem;
+        font-size: $font-size-description;
+        font-weight: $font-weight-bold;
+        line-height: 2rem;
+        color: $color-contact-4;
+        background: white;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        &:hover {
+          filter: brightness(110%);
+        }
+      }
+    }
+  }
+  .underline ul {
+    // display: inline;
+    display: flex;
+    flex-direction: column;
+    // margin-right: auto;
+    color: white;
+  }
+  .underline li {
+    // margin-right: 10px;
+    font-size: 1.6rem;
+  }
+}
+
+.window-small {
+  .Not-correct-modal {
+  }
+}

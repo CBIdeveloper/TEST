@@ -1,0 +1,123 @@
+@import 'src/assets/stylesheet/config';
+
+@media print {
+  .modal-wrapper {
+    position: absolute !important;
+    background: none !important;
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  z-index: 100;
+
+  .backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: $color-modal-dim;
+
+    &.top {
+      z-index: 199;
+    }
+  }
+
+  .modal {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-default;
+    z-index: 100;
+    align-self: center;
+    color: black;
+    max-width: 95%;
+
+    &.fixed-size {
+      width: 60vw;
+      height: 60%;
+      min-width: 40rem;
+      min-height: 40rem;
+    }
+
+    &.full-height {
+      width: 60vw;
+      height: 100%;
+      min-width: 40rem;
+      min-height: 40rem;
+    }
+
+    &.top {
+      z-index: 300;
+    }
+
+    .modal-header {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      background: $color-linear-blue;
+      color: white;
+      height: 4rem;
+      line-height: 4rem;
+      box-sizing: border-box;
+      padding: 1rem 1.2rem 1rem 2.2rem;
+      font-size: $font-size-white-text;
+      font-weight: $font-weight-bold;
+
+      &.red {
+        background: $color-linear-red;
+      }
+
+      .close-button-container {
+        @include center-item;
+
+        .close-button {
+          @include outline-none;
+          height: 2rem;
+          width: 2rem;
+          cursor: pointer;
+
+          &:hover {
+            opacity: $opacity-hover;
+          }
+        }
+      }
+    }
+    .modal-ender {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      background: $color-linear-blue;
+      color: white;
+      height: 3rem;
+      line-height: 4rem;
+      box-sizing: border-box;
+      padding: 1rem 1.2rem 1rem 2.2rem;
+      font-size: $font-size-white-text;
+      font-weight: $font-weight-bold;
+    }
+    .modal-body {
+      flex: 1;
+      overflow-y: scroll;
+      padding: 1rem 2.2rem;
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import 'src/assets/stylesheet/config';
+
+.editor-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.1rem;
+  width: 40rem;
+  max-width: 100%;
+  .contact-item-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+    .confirm-button {
+      @include center-item;
+      min-width: 7rem;
+      height: 3rem;
+      padding: 0 1rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-contact-4;
+      border-radius: $border-radius-button;
+      text-decoration: none;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .editor-modal {
+  }
+}

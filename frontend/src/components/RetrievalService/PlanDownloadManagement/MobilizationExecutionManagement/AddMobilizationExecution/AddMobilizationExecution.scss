@@ -1,0 +1,57 @@
+@import 'src/assets/stylesheet/config';
+
+.add-mobilization-execution {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.15rem 0;
+    margin-top: 1.5rem;
+
+    .normal-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-black;
+      background: $color-linear-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .submit-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .add-mobilization-execution {
+  }
+}

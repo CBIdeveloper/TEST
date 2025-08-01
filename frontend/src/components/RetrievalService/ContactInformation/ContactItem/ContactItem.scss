@@ -1,0 +1,265 @@
+@import 'src/assets/stylesheet/config';
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  height: 19rem;
+  box-sizing: border-box;
+  border-radius: $border-radius-default;
+  box-shadow: $box-shadow-default;
+  background-color: white;
+  overflow: hidden;
+
+  .horizontal-line {
+    width: 25rem;
+    height: 1rem;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 3rem 0 3.5rem;
+
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+
+      .unit-logo {
+        width: 10rem;
+        height: 6.3rem;
+      }
+
+      .unit-name{
+        font-size: $font-size-general;
+        line-height: 2.2rem;
+        color: $color-black;
+        margin-top: 0.8rem;
+      }
+
+      .plan-name {
+        font-size: $font-size-general;
+        line-height: 2.2rem;
+        color: $color-black;
+      }
+    }
+
+    .icon-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1.5rem;
+
+      .short-name {
+        font-size: $font-size-title;
+        line-height: 2.9rem;
+        font-weight: $font-weight-bold;
+        white-space: nowrap;
+      }
+
+      .contact-icon {
+        width: 8rem;
+        height: 7rem;
+      }
+    }
+  }
+
+  .contact-button {
+    @include center-item;
+    font-size: $font-size-description;
+    font-weight: $font-weight-button;
+    line-height: 1.9rem;
+    width: 10.5rem;
+    height: 3rem;
+    border: 2px solid transparent;
+    border-radius: $border-radius-button;
+    margin-top: auto;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.color-contact-1 {
+    color: $color-contact-1;
+
+    .horizontal-line {
+      background-color: $color-contact-1;
+    }
+
+    .contact-button {
+      border-color: $color-contact-1;
+
+      &:hover {
+        background-color: $color-contact-1;
+      }
+    }
+  }
+
+  &.color-contact-2 {
+    color: $color-contact-2;
+
+    .horizontal-line {
+      background-color: $color-contact-2;
+    }
+
+    .contact-button {
+      border-color: $color-contact-2;
+
+      &:hover {
+        background-color: $color-contact-2;
+      }
+    }
+  }
+
+  &.color-contact-3 {
+    color: $color-contact-3;
+
+    .horizontal-line {
+      background-color: $color-contact-3;
+    }
+
+    .contact-button {
+      border-color: $color-contact-3;
+
+      &:hover {
+        background-color: $color-contact-3;
+      }
+    }
+  }
+
+  &.color-contact-4 {
+    color: $color-contact-4;
+
+    .horizontal-line {
+      background-color: $color-contact-4;
+    }
+
+    .contact-button {
+      border-color: $color-contact-4;
+
+      &:hover {
+        background-color: $color-contact-4;
+      }
+    }
+  }
+
+  &.color-contact-5 {
+    color: $color-contact-5;
+
+    .horizontal-line {
+      background-color: $color-contact-5;
+    }
+
+    .contact-button {
+      border-color: $color-contact-5;
+
+      &:hover {
+        background-color: $color-contact-5;
+      }
+    }
+  }
+
+  &.color-contact-6 {
+    color: $color-contact-6;
+
+    .horizontal-line {
+      background-color: $color-contact-6;
+    }
+
+    .contact-button {
+      border-color: $color-contact-6;
+
+      &:hover {
+        background-color: $color-contact-6;
+      }
+    }
+  }
+
+  &.color-contact-7 {
+    color: $color-contact-7;
+
+    .horizontal-line {
+      background-color: $color-contact-7;
+    }
+
+    .contact-button {
+      border-color: $color-contact-7;
+
+      &:hover {
+        background-color: $color-contact-7;
+      }
+    }
+  }
+
+  &.color-contact-8 {
+    color: $color-contact-8;
+
+    .horizontal-line {
+      background-color: $color-contact-8;
+    }
+
+    .contact-button {
+      border-color: $color-contact-8;
+
+      &:hover {
+        background-color: $color-contact-8;
+      }
+    }
+  }
+
+  &.color-contact-9 {
+    color: $color-contact-9;
+
+    .horizontal-line {
+      background-color: $color-contact-9;
+    }
+
+    .contact-button {
+      border-color: $color-contact-9;
+
+      &:hover {
+        background-color: $color-contact-9;
+      }
+    }
+  }
+
+  &.color-contact-10 {
+    color: $color-contact-10;
+
+    .horizontal-line {
+      background-color: $color-contact-10;
+    }
+
+    .contact-button {
+      border-color: $color-contact-10;
+
+      &:hover {
+        background-color: $color-contact-10;
+      }
+    }
+  }
+
+  &.color-contact-12 {
+    color: $color-contact-12;
+
+    .horizontal-line {
+      background-color: $color-contact-12;
+    }
+
+    .contact-button {
+      border-color: $color-contact-12;
+
+      &:hover {
+        background-color: $color-contact-12;
+      }
+    }
+  }
+}
+
+.window-small {
+  .contact-item {
+  }
+}

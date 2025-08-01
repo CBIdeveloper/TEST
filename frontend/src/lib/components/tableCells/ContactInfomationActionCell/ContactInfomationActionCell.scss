@@ -1,0 +1,27 @@
+@import 'src/assets/stylesheet/config';
+.contact-information-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-information-button {
+    @include center-item;
+    min-width: 9rem;
+
+    height: 3rem;
+    font-size: $font-size-white-text;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-button;
+    color: white;
+    background: $color-linear-blue-grey;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}

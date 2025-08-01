@@ -1,0 +1,62 @@
+@import 'src/assets/stylesheet/config';
+.privacy-text {
+  font-size: 16px;
+}
+
+.privacy-div {
+  display: flex;
+}
+.privacy-button {
+  @include no-select;
+  @include center-item;
+  width: 11rem;
+  height: 4rem;
+  box-sizing: border-box;
+  margin: 1.7rem auto;
+  border: 2px solid $color-blue;
+  border-radius: $border-radius-button;
+  font-size: $font-size-button;
+  font-weight: $font-weight-button;
+  text-decoration: none;
+  color: $color-blue;
+  background-color: white;
+  &:hover {
+    background-color: $color-blue;
+    color: white;
+  }
+}
+
+.indented-paragraph {
+  text-indent: 2em;
+  text-align: justify;
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+  .bold-text {
+    font-weight: bold;
+  }
+}
+
+.indented-paragraph2 {
+  text-indent: 2em;
+  text-align: justify;
+  padding-left: 7em;
+  padding-right: 4.5em;
+}
+.indented-paragraph3 {
+  text-indent: 2.5em;
+  text-align: justify;
+  padding-left: 2em;
+  padding-right: 4.5em;
+}
+.indented-paragraph4 {
+  text-indent: 2em;
+  text-align: justify;
+  padding-left: 12.5em;
+  padding-right: 4.5em;
+}
+.custom-line {
+  width: 90%;
+  height: 3px;
+  background-color: $color-contact-4;
+  margin: 20px auto;
+}

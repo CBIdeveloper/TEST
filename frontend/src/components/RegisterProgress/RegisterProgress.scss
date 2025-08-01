@@ -1,0 +1,78 @@
+@import "src/assets/stylesheet/config";
+
+.register-progress {
+  .section-title {
+    margin: 1.5rem 0 3rem;
+  }
+
+  .progress-container {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 4.4rem 0;
+    box-sizing: border-box;
+    min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
+
+    .container {
+      max-width: 147.5rem;
+
+      .validate-input {
+        .text-input {
+          .input-container {
+            padding: 0;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .action-button-container {
+    @include center-item;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1.65rem 0;
+
+    .reset-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: $color-black;
+      background: $color-linear-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .search-button {
+      @include center-item;
+      width: 10rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .register-progress {
+
+  }
+}

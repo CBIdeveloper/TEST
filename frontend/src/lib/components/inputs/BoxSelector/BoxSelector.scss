@@ -1,0 +1,62 @@
+@import '../../../../assets/stylesheet/config';
+
+.box-selector {
+  @include input-component;
+  flex-direction: column;
+
+  &.zen {
+    padding: 0;
+
+    .input-title,
+    .error-message {
+      display: none;
+    }
+  }
+
+  .input-title {
+    @include input-title;
+  }
+
+  .box-selector-container {
+    display: flex;
+    flex-direction: row;
+
+    .selector-item {
+      @include no-select;
+      @include center-item;
+      flex: 1;
+      box-sizing: border-box;
+      border-right: none;
+      background-color: rgba(90, 127, 155, 0.2);;
+      color: $color-blue;
+      height: 4rem;
+      font-size: $font-size-description;
+      overflow: hidden;
+      padding: 1rem;
+
+      &.selected {
+        background-color: $color-blue;
+        color: white;
+      }
+
+      &:first-child {
+        border-top-left-radius: $border-radius-button;
+        border-bottom-left-radius: $border-radius-button;
+      }
+
+      &:last-child {
+        border-top-right-radius: $border-radius-button;
+        border-bottom-right-radius: $border-radius-button;
+      }
+    }
+  }
+
+  .error-message {
+    @include input-error();
+  }
+}
+
+.window-small {
+  .box-selector {
+  }
+}

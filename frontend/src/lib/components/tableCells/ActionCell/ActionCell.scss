@@ -1,0 +1,34 @@
+@import "src/assets/stylesheet/config";
+
+.action-cell {
+  .action-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 15rem;
+
+    .modify-button,
+    .delete-button {
+      @include center-item;
+      width: 7rem;
+      height: 3rem;
+      font-size: $font-size-description;
+      font-weight: $font-weight-bold;
+      line-height: 2rem;
+      color: white;
+      background: $color-linear-blue-grey;
+      border-radius: $border-radius-button;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+.window-small {
+  .action-cell {
+
+  }
+}

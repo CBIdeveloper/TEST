@@ -1,0 +1,17 @@
+@import "src/assets/stylesheet/config";
+
+.mobilization-classification-tab-page {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2.5rem;
+  padding: 2.5rem 6rem;
+}
+
+.window-small {
+  .mobilization-classification-tab-page {
+
+  }
+}

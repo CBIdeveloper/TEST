@@ -1,0 +1,114 @@
+@import 'src/assets/stylesheet/config';
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 2rem;
+
+  .page-size {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .page-control {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-gap: 0.5rem;
+
+    .icon {
+      @include outline-none;
+      @include center-item;
+      color: $color-feature;
+      border: 1.5px solid $color-feature;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .search-page {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+
+    .search-page-container {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      border: 1.5px solid $color-feature;
+      border-radius: 0.5rem;
+
+      .current-page {
+        @include outline-none;
+        min-width: 2rem;
+        text-align: right;
+        font-size: $font-size-general;
+        color: $color-text;
+        background-color: transparent;
+        border: none;
+        padding-left: 0.5rem;
+      }
+
+      .total-page {
+        @include no-select;
+        font-size: $font-size-general;
+        color: $color-text-disabled;
+        padding: 0.5rem 1rem 0.5rem 1.5rem;
+      }
+
+      .search-button {
+        @include no-select;
+        @include feature-button;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.window-small {
+  .pagination {
+    flex-direction: column;
+    grid-gap: 1rem;
+
+    .page-size {
+      justify-content: center;
+    }
+
+    .search-page {
+      justify-content: center;
+    }
+  }
+}
+
+.desktop {
+  .pagination {
+    .page-control {
+      .icon {
+        &:hover {
+          background-color: $color-feature;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .pagination {
+    .page-control {
+      .icon {
+        &:active {
+          background-color: $color-feature;
+          color: white;
+        }
+      }
+    }
+  }
+}

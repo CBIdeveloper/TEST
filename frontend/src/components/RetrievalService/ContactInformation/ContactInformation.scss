@@ -1,0 +1,67 @@
+@import 'src/assets/stylesheet/config';
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  .text-containers {
+    @include center-item;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .is-plan-sponsor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: $font-size-description;
+    line-height: 1.9rem;
+    color: $color-black;
+
+    .select-container {
+      padding: 0;
+    }
+  }
+  .contact-information-container {
+    @include center-item;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    max-width: 140rem;
+    display: flex;
+    align-self: flex-start;
+    // @media (max-width: 1400px) {
+    //   @include center-item;
+    //   align-self: center;
+    // }
+  }
+  .approve-button {
+    @include center-item;
+    min-width: 9rem;
+
+    height: 3rem;
+    font-size: $font-size-white-text;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-button;
+    color: white;
+    background: $color-linear-blue-grey;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+  .table-cell {
+    white-space: pre-line;
+  }
+  // .contact-information-container > * {
+  //   flex: 1 1 calc((100% - 8rem) / 5);
+  //   box-sizing: border-box;
+  // }
+}
+
+.window-small {
+  .contact-information {
+  }
+}
